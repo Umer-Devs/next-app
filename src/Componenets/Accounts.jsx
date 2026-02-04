@@ -42,7 +42,7 @@ const Accounts = () => {
                 </motion.h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
                 {accountCards.map((card, index) => (
                     <motion.div
                         key={card.id}
@@ -50,7 +50,7 @@ const Accounts = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.1 }}
                         viewport={{ once: true }}
-                        className="group relative bg-gray-100 border w-[90%] mx-auto border-gray-100 px-6 pt-6 rounded-2xl shadow-md hover:bg-primary-red transition-all duration-500 cursor-pointer overflow-hidden"
+                        className="group relative bg-gray-100 border w-[95%] mx-auto border-gray-100 px-6 pt-6 rounded-2xl shadow-md hover:bg-primary-red transition-all duration-500 cursor-pointer overflow-hidden"
                     >
                         <div className="flex justify-between items-start mb-4">
                             <div>

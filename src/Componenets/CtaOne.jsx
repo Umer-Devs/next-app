@@ -9,7 +9,7 @@ const CtaOne = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className='bg-primary-red rounded-xl p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 shadow-2xl shadow-primary-red/30 border border-black border-4'
+                className='bg-primary-red rounded-xl p-8 md:p-16 flex flex-col custom-size:flex-row items-center justify-between gap-12 shadow-2xl shadow-primary-red/30 border border-black border-4'
             >
                 {/* Left Content */}
                 <div className="flex-1 text-white space-y-6">

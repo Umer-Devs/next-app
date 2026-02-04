@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="bg-[#E5E5E5] text-primary-black">
             {/* Main Footer Content */}
             <div className="custom-padding py-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 custom-size:grid-cols-3 gap-12 custom-size:gap-24">
 
                     {/* Column 1: Logo & Info */}
                     <div className="space-y-8">
