@@ -26,7 +26,7 @@ const Hero = () => {
 
   return (
     <section className='overflow-hidden bg-white'>
-      <main className='grid lg:grid-cols-2 custom-padding min-h-[85vh] items-center py-10 lg:py-0'>
+      <main className='grid custom-size:grid-cols-2 custom-padding min-h-screen items-center py-10 custom-size:py-0'>
         {/* Left Content */}
         <motion.div
           variants={containerVariants}
@@ -81,7 +81,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Image & Animated Boxes */}
-        <div className='relative flex justify-end lg:justify-end items-center mt-24 lg:mt-0'>
+        <div className='relative flex justify-end custom-size:justify-end items-center mt-24 custom-size:mt-0'>
           {/* Main Hero Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

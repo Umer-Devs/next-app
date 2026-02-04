@@ -29,7 +29,7 @@ const Header = () => {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="hidden lg:flex items-center bg-primary-black rounded-lg p-2 px-16 space-x-16">
+                <div className="hidden custom-size:flex items-center bg-primary-black rounded-lg p-2 px-16 space-x-16">
                     <ul className="flex items-center space-x-10 capitalize text-white">
                         {navLinks.map((link) => (
                             <li key={link.name} className="relative group">
@@ -71,7 +71,7 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Demo Button */}
-                <div className="hidden lg:block">
+                <div className="hidden custom-size:block">
                     <Link to="/request-demo">
                         <motion.button
                             whileHover={{ scale: 1.05 }}
@@ -85,7 +85,7 @@ const Header = () => {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="lg:hidden p-2 text-primary-black"
+                    className="custom-size:hidden p-2 text-primary-black"
                     onClick={toggleMobileMenu}
                     aria-label="Toggle Menu"
                 >
@@ -103,7 +103,7 @@ const Header = () => {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="fixed inset-0 bg-black/60 z-40 lg:hidden"
+                            className="fixed inset-0 bg-black/60 z-40 custom-size:hidden"
                         />
 
                         {/* Sidebar Content */}
@@ -112,7 +112,7 @@ const Header = () => {
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
                             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                            className="fixed top-0 right-0 h-full w-[80%] bg-primary-black z-50 lg:hidden flex flex-col p-8 pt-24"
+                            className="fixed top-0 right-0 h-full w-[80%] bg-primary-black z-50 custom-size:hidden flex flex-col p-8 pt-24"
                         >
                             <button
                                 onClick={toggleMobileMenu}

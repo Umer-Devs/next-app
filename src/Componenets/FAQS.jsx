@@ -38,7 +38,7 @@ const FAQS = () => {
 
     return (
         <section className="custom-padding py-24 bg-white overflow-hidden">
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+            <div className="grid custom-size:grid-cols-2 gap-16  items-start">
 
                 {/* Left Content */}
                 <motion.div

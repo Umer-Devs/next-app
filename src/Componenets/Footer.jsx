@@ -15,7 +15,7 @@ const Footer = () => {
                             <h2 className="text-6xl font-black tracking-tighter uppercase">LOGO</h2>
                         </Link>
                         <p className="text-primary-gray font-medium leading-relaxed max-w-">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
                         </p>
                     </div>
 

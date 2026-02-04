@@ -13,7 +13,7 @@ const CtaOne = () => {
             >
                 {/* Left Content */}
                 <div className="flex-1 text-white space-y-6">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+                    <h2 className="text-4xl md:text-5xl  font-bold leading-tight">
                         Lorem Ipsum Is Simply <br /> Dummy Text Of
                     </h2>
                     <p className="text-white/80 font-medium text-lg max-w-xl">

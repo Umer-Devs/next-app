@@ -12,7 +12,7 @@ const OprationOne = () => {
 
     return (
         <section className="custom-padding py-20 bg-white overflow-hidden">
-            <div className="grid lg:grid-cols-2 gap-12  items-center">
+            <div className="grid custom-size:grid-cols-2 gap-12  items-center">
 
                 {/* Left Content */}
                 <motion.div
@@ -20,18 +20,18 @@ const OprationOne = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="flex flex-col space-y-8"
+                    className="flex flex-col space-y-8 "
                 >
                     <div className="space-y-4">
-                        <h2 className="text-4xl md:text-5xl font-bold text-primary-black tracking-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold text-center text-primary-black tracking-tight custom-size:text-left">
                             Operations / Work
                         </h2>
-                        <p className="text-primary-black font-medium leading-relaxed max-w-xl">
+                        <p className="text-primary-black font-medium leading-relaxed max-w-xl  mx-auto custom-size:mx-0">
                             Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,
                         </p>
                     </div>
 
-                    <div className="flex flex-col md:flex-row gap-8 items-start">
+                    <div className="    flex flex-col md:flex-row gap-8 items-start">
                         {/* Features List */}
                         <div className="flex flex-col gap-4 w-full md:w-auto">
                             {listItems.map((item, index) => (
@@ -74,7 +74,7 @@ const OprationOne = () => {
                     whileInView={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="relative flex justify-end"
+                    className="relative flex justify-center custom-size:justify-end"
                 >
                     <motion.img
                         animate={{ y: [0, -10, 0] }}
