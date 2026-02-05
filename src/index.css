@@ -18,7 +18,7 @@
 }
 @layer {
   .custom-padding {
-    @apply px-4 md:px-9 lg:px-16 xl:px-20 2xl:px-40;
+    @apply px-4 md:px-9 lg:px-16 xl:px-20 2xl:px-30;
   }
   
  

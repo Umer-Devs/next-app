@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
                         Why Choose Us
                     </h2>
 
-                    <p className='text-primary-black font-medium text-justify  custom-size:min-w-4xl'>
+                    <p className='text-primary-black font-medium text-justify  lg:min-w-2xl  custom-size:min-w-3xl'>
                         FlowHCM Stands Out Due To Its Comprehensive HRMS Features Designed To Streamline Human Resource Management. It Offers Robust Functionalities For Managing Employee Data, Payroll Processing,  Evaluations All Within A User-Friendly Interface. With Its Emphasis On Scalability And Efficiency, FlowHCM Empowers Organizations To Optimize Their HR Processes And Enhance Overall Productivity Seamlessly.
                     </p>
 

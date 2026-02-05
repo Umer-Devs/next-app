@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { WhyChoose1 } from '../../assets';
+import { WhyChoose1, Line2 } from '../../assets';
 
 const CtaTwo = () => {
     return (
-        <section className="custom-padding py-24 bg-white overflow-hidden">
+        <section className="custom-padding py-24 bg-white overflow-hidden relative">
+            <img src={Line2} className='absolute -top-0 -right-10 h-full opacity-30 ' alt="" />
             <div className="grid custom-size:grid-cols-2 gap-16 items-center">
 
                 {/* Left Content */}

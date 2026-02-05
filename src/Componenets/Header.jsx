@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Modal from './Modal';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const navLinks = [
         { name: 'home', path: '/' },
@@ -72,15 +74,14 @@ const Header = () => {
 
                 {/* Desktop Demo Button */}
                 <div className="hidden custom-size:block">
-                    <Link to="/request-demo">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-primary-red px-6 py-2 rounded-full text-white capitalize text-lg font-medium"
-                        >
-                            request a demo
-                        </motion.button>
-                    </Link>
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => setIsModalOpen(true)}
+                        className="bg-primary-red px-6 py-2 rounded-full text-white capitalize text-lg font-medium"
+                    >
+                        request a demo
+                    </motion.button>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -144,16 +145,23 @@ const Header = () => {
                                         Contact Us
                                     </button>
                                 </Link>
-                                <Link to="/request-demo" onClick={() => setIsMobileMenuOpen(false)} className="w-full">
-                                    <button className="w-full border-2 border-primary-red text-primary-red py-4 rounded-xl text-xl font-semibold">
-                                        Request a Demo
-                                    </button>
-                                </Link>
+                                <button
+                                    onClick={() => {
+                                        setIsMobileMenuOpen(false);
+                                        setIsModalOpen(true);
+                                    }}
+                                    className="w-full border-2 border-primary-red text-primary-red py-4 rounded-xl text-xl font-semibold"
+                                >
+                                    Request a Demo
+                                </button>
                             </div>
                         </motion.div>
                     </>
                 )}
             </AnimatePresence>
+
+            {/* Modal */}
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </motion.nav>
     );
 };

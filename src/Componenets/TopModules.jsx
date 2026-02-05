@@ -19,7 +19,7 @@ const TopModules = () => {
     ];
 
     return (
-        <section className="py-20 bg-white custom-padding overflow-hidden">
+        <section className="py-20 bg-white custom-padding mt-18 overflow-hidden">
             <div className="flex flex-col mb-12">
                 <motion.h2
                     initial={{ opacity: 0, x: -30 }}
