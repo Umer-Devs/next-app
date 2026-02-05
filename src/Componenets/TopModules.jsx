@@ -26,7 +26,7 @@ const TopModules = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl font-bold text-primary-black uppercase tracking-tight"
+                    className="text-4xl font-semibold text-primary-black uppercase tracking-tight"
                 >
                     Renexus TOP MODULES
                 </motion.h2>
@@ -39,7 +39,6 @@ const TopModules = () => {
                     Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
                 </motion.p>
             </div>
-
             <div className="relative">
                 <Swiper
                     modules={[Autoplay, Pagination]}
@@ -73,8 +72,8 @@ const TopModules = () => {
                                     {module.icon}
                                 </div>
                                 <div className="space-y-2">
-                                    <h3 className="text-xl font-bold text-primary-black">{module.title}</h3>
-                                    <p className="text-primary-gray font-semibold text-sm leading-relaxed">
+                                    <h3 className="text-xl md:text-2xl  font-semibold text-primary-black">{module.title}</h3>
+                                    <p className="text-primary-gray font-semibold leading-relaxed">
                                         {module.desc}
                                     </p>
                                 </div>

@@ -36,7 +36,7 @@ const Hero = () => {
         >
           <motion.h1
             variants={itemVariants}
-            className='font-bold text-primary-black leading-[1.2]'
+            className='font-semibold text-primary-black leading-[1.2]'
           >
             Best HR Software <br />
             <span className="">To Manage Your Employe</span>
@@ -44,7 +44,7 @@ const Hero = () => {
 
           <motion.p
             variants={itemVariants}
-            className='text-primary-gray font-medium leading-relaxed font-medium text-primary-black text-justify'
+            className=' font-medium leading-relaxed font-medium text-primary-black text-justify'
           >
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vitae quidem pariatur ipsa necessitatibus reiciendis, vero rerum laborum quo, dolorum sunt. Provident facilis id impedit rerum commodi maxime ipsam ducimus libero aperiam nulla. Minima!
           </motion.p>

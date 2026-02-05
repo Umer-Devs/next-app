@@ -92,12 +92,7 @@ const BlogsHero = () => {
               className='  w-full max-w-md custom-size-two:max-w-2xl  drop-shadow-2xl'
               src={About1}
               alt="HR Software Interface"
-            />
-
-          
-
-            {/* Decorative Background Blur */}
-            {/* <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-primary-red/10 rounded-full blur-3xl" /> */}
+            /> 
           </motion.div>
         </div>
       </main>
