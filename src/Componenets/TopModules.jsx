@@ -9,14 +9,15 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const TopModules = () => {
-    const modules = [
-        { id: 1, title: 'Employee', desc: 'Streamline Workforce Data And Operations', icon: <Users size={32} /> },
-        { id: 2, title: 'Recruitment', desc: 'Find and hire the best talent globally', icon: <Briefcase size={32} /> },
-        { id: 3, title: 'Attendance', desc: 'Real-time tracking of employee presence', icon: <Clock size={32} /> },
-        { id: 4, title: 'Payroll', desc: 'Automated salary and tax calculations', icon: <BarChart3 size={32} /> },
-        { id: 5, title: 'Performance', desc: 'KPI tracking and performance reviews', icon: <ShieldCheck size={32} /> },
-        { id: 6, title: 'Documents', desc: 'Secure storage for all company files', icon: <FileText size={32} /> },
-    ];
+    const modules = 
+       [
+  { id: 1, title: 'Employee', desc: 'Manage workforce data and operations', icon: <Users size={32} /> },
+  { id: 2, title: 'Recruitment', desc: 'Manage hiring process and talent acquisition', icon: <Briefcase size={32} /> },
+  { id: 3, title: 'Attendance', desc: 'Manage employee time and attendance tracking', icon: <Clock size={32} /> },
+  { id: 4, title: 'Payroll', desc: 'Manage salaries, taxes, and payment processing', icon: <BarChart3 size={32} /> },
+  { id: 5, title: 'Performance', desc: 'Manage KPIs and employee performance reviews', icon: <ShieldCheck size={32} /> },
+  { id: 6, title: 'Documents', desc: 'Manage secure storage and document access', icon: <FileText size={32} /> },
+];
 
     return (
         <section className="py-20 bg-white custom-padding mt-18 overflow-hidden">
