@@ -26,7 +26,7 @@ const Modal = ({ isOpen, onClose }) => {
                     >
                         {/* Header */}
                         <div className="flex items-center justify-between p-6 sm:p-8 border-b border-gray-100">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-primary-red">Get Connected With Us</h2>
+                            <h2 className="text-2xl sm:text-3xl font-bold text-primary-red">Request A Demo</h2>
                             <button
                                 onClick={onClose}
                                 className="p-2 rounded-full hover:bg-gray-100 transition-colors text-gray-500 hover:text-primary-red"

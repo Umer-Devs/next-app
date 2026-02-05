@@ -21,7 +21,7 @@ const Header = () => {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="custom-padding py-6 sticky top-0 bg-white z-50  "
+            className="custom-padding py-6  top-0 bg-white z-50  "
         >
             <div className="flex items-center justify-between ">
 
@@ -31,7 +31,7 @@ const Header = () => {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="hidden custom-size:flex items-center bg-primary-black rounded-lg p-2 px-16 space-x-16">
+                <div className="hidden custom-size:flex items-center bg-primary-black rounded-lg p-2 px-20 space-x-16">
                     <ul className="flex items-center space-x-10 capitalize text-white">
                         {navLinks.map((link) => (
                             <li key={link.name} className="relative group">
@@ -65,7 +65,7 @@ const Header = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-primary-red text-white px-6 py-2 rounded-full capitalize text-lg font-medium"
+                            className="bg-primary-red text-white px-8 py-2 rounded-full capitalize text-lg font-medium"
                         >
                             contact us
                         </motion.button>

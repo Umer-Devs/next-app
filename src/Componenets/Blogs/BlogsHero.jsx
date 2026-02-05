@@ -89,7 +89,7 @@ const BlogsHero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-              className='  w-full  drop-shadow-2xl'
+              className='  w-full max-w-md custom-size-two:max-w-2xl  drop-shadow-2xl'
               src={About1}
               alt="HR Software Interface"
             />

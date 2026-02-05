@@ -25,7 +25,7 @@ const Hero = () => {
   }
 
   return (
-    <section className='overflow-hidden bg-white'>
+    <section className='overflow-hidden bg-white '>
       <main className='grid custom-size:grid-cols-2 custom-padding min-h-screen items-center py-10 custom-size:py-0'>
         {/* Left Content */}
         <motion.div

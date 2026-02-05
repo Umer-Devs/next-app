@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Download } from 'lucide-react'
-import { About1, HeroImg, HeroMini, WhyChoose1 } from '../../assets'
+import { About1 } from '../../assets'
 
 const AboutHero = () => {
   const containerVariants = {
@@ -25,8 +24,8 @@ const AboutHero = () => {
   }
 
   return (
-    <section className='overflow-hidden bg-white my-[8%]'>
-      <main className='grid custom-size:grid-cols-2 custom-padding  items-center py-20 custom-size:py-0'>
+    <section className='overflow-hidden bg-white py-12 md:py-20 lg:py-28'>
+      <main className='custom-padding grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center'>
         {/* Left Content */}
         <motion.div
           variants={containerVariants}
@@ -36,65 +35,57 @@ const AboutHero = () => {
         >
           <motion.h1
             variants={itemVariants}
-            className='font-bold text-primary-black leading-[1.2] capitalize'
+            className='text-3xl md:text-5xl lg:text-6xl font-bold text-primary-black leading-tight capitalize text-center lg:text-left'
           >
-           get to know a bout
-<br className='hidden custom-size:block' />
-            <span className="capitalize">CRM</span>
+            Get to know about
+            <br className='hidden md:block' />
+            <span className="capitalize"> CRM</span>
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
-            className='text-primary-gray font-medium leading-relaxed font-medium text-primary-black text-justify'
+            className='text-primary-gray font-medium text-base md:text-lg leading-relaxed text-justify'
           >
-           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           </motion.p>
 
-         
-
-          <motion.div 
+          <motion.div
             variants={itemVariants}
-            className='flex flex-wrap items-center gap-4 lg:gap-8'
+            className='flex flex-wrap items-center justify-center lg:justify-start gap-4'
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className='border-2 border-primary-red text-primary-black px-10 py-3 rounded-full font-bold transition-all hover:bg-primary-red hover:text-white'
+              className='border-2 border-primary-red text-primary-black px-8 py-3 rounded-full font-bold transition-all hover:bg-primary-red hover:text-white w-full sm:w-auto flex justify-center'
             >
-             Get Started Now
+              Get Started Now
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className='bg-primary-black text-primary-red px-8 py-3 rounded-full font-bold flex items-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black'
+              className='bg-primary-black text-primary-red px-8 py-3 rounded-full font-bold flex items-center justify-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black w-full sm:w-auto'
             >
               Request a Demo
             </motion.button>
           </motion.div>
         </motion.div>
 
-        {/* Right Image & Animated Boxes */}
-        <div className=' hidden  relative custom-size:flex justify-center  ` custom-size:justify-end items-center  custom-size:mt-0'>
-          {/* Main Hero Image */}
+        {/* Right Image */}
+        <div className='flex justify-center lg:justify-end items-center '>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="relative"
+            className="relative w-full max-w-lg lg:max-w-2xl"
           >
-            < motion.img
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-              className='  w-full  drop-shadow-2xl'
+            <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              className='w-full h-auto drop-shadow-2xl'
               src={About1}
               alt="HR Software Interface"
             />
-
-          
-
-            {/* Decorative Background Blur */}
-            {/* <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-primary-red/10 rounded-full blur-3xl" /> */}
           </motion.div>
         </div>
       </main>

@@ -76,7 +76,7 @@ const WhyChooseUsOne = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-5xl lg:text-6xl  font-semibold text-primary-black leading-[1.1] tracking-tight"
+              className="text-4xl md:text-5xl   font-semibold text-primary-black leading-[1.1] tracking-tight"
             >
               Unlock the potential <br className="hidden md:block" /> of your business.
             </motion.h2>
@@ -120,7 +120,7 @@ const WhyChooseUsOne = () => {
               </motion.h3>
 
               <div className="space-y-6">
-                <h4 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                <h4 className="text-3xl md:text-4xl  font-bold text-white leading-tight">
                   Best Creative IT Agency And Solutions Since 2005.
                 </h4>
                 <p className="text-gray-400 text-lg leading-relaxed max-w-xl">

@@ -58,14 +58,14 @@ const BlogComponenet = () => {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: blog.id * 0.1 }}
+                        transition={{ duration: 0.5, delay: blog.id * 0.1 }} 
                         className='group bg-primary-black  overflow-hidden cursor-pointer rounded-t-2xl'
                     >
                         {/* Image Container */}
-                        <div className='relative h-64 overflow-hidden rounded-xl'>
+                        <div className='relative h-64 overflow-hidden '>
                             <img
                                 src={blog.image}
-                                className='w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-110'
+                                className='w-full h-full object-cover  transition-transform duration-500 group-hover:scale-110'
                                 alt={blog.title}
                             />
                         </div>

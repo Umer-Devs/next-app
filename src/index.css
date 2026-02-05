@@ -14,6 +14,7 @@
   --color-primary-black: #0C0C0C;
   --color-primary-gray: #343A40;
   --breakpoint-custom-size: 71.0625rem;
+  --breakpoint-custom-size-two: 88.875rem;
 
 }
 @layer {

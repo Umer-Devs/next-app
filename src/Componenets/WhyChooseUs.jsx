@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
 
     return (
         <section className='custom-padding py-20 bg-white overflow-hidden'>
-            <div className='grid custom-size:grid-cols-2 items-center'>
+            <div className='grid custom-size:grid-cols-2 gap-10 items-center'>
                 {/* Left Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
                         Why Choose Us
                     </h2>
 
-                    <p className='text-primary-black font-medium text-justify  lg:min-w-2xl  custom-size:min-w-3xl'>
+                    <p className='text-primary-black font-medium   lg:min-w-2xl custom-size-two:min-w-4xl text-evenly  '>
                         FlowHCM Stands Out Due To Its Comprehensive HRMS Features Designed To Streamline Human Resource Management. It Offers Robust Functionalities For Managing Employee Data, Payroll Processing,  Evaluations All Within A User-Friendly Interface. With Its Emphasis On Scalability And Efficiency, FlowHCM Empowers Organizations To Optimize Their HR Processes And Enhance Overall Productivity Seamlessly.
                     </p>
 
