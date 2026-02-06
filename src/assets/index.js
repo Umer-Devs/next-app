@@ -20,6 +20,10 @@ export {default as Account3} from './Home/Account3.png'
 export {default as Account4} from './Home/Account4.png'
 export {default as Account5} from './Home/Account5.png'
 export {default as Account6} from './Home/Account6.png'
+export {default as CrmMain} from './Home/CrmMain.png'
+export {default as Crm1} from './Home/Crm1.png'
+export {default as Crm2} from './Home/Crm2.png'
+export {default as CrmToolsBg} from './Home/CrmToolsBg.png'
 
 // opration 
 export {default as Opration1} from './Home/Opration1.png'
@@ -40,6 +44,14 @@ export {default as Blog5} from './Blog/Blog5.png'
 // contact 
 export {default as ContactBg} from './Contact/ContactBg.png'
 export {default as Contact1} from './Contact/Contact1.png'
+
+// tools 
+export {default as item1} from './Tools/item1.png'
+export {default as item2} from './Tools/item2.png'
+export {default as item3} from './Tools/item3.png'
+export {default as item4} from './Tools/item4.png'
+export {default as item5} from './Tools/item5.png'
+export {default as item6} from './Tools/item6.png'
 
 
 

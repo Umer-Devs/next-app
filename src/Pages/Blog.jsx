@@ -6,8 +6,11 @@ import { ArrowUpRight } from 'lucide-react'
 const Blog = () => {
   return (
     <>
+    {/* header  */}
       <Header />
+      {/* blog hero  */}
       <BlogsHero />
+      {/* blog  */}
       <section className='custom-padding relative pb-6'>
         <img src={Line1} className='absolute top-0 left-0 hidden sm:block' alt="" />
         <div className='w-full flex flex-col items-start justify-center rounded-2xl bg-cover bg-center bg-no-repeat space-y-6 md:space-y-10 py-12  px-6 md:px-12 min-h-[50vh]' style={{ backgroundImage: `url(${Blog1})` }}>
@@ -25,7 +28,9 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      {/* blog componenet  */}
       <BlogComponenet />
+      {/* footer  */}
       <Footer />
     </>
   )

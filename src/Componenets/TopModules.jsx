@@ -10,13 +10,43 @@ import 'swiper/css/pagination';
 
 const TopModules = () => {
     const modules = 
-       [
-  { id: 1, title: 'Employee', desc: 'Manage workforce data and operations', icon: <Users size={32} /> },
-  { id: 2, title: 'Recruitment', desc: 'Manage hiring process and talent acquisition', icon: <Briefcase size={32} /> },
-  { id: 3, title: 'Attendance', desc: 'Manage employee time and attendance tracking', icon: <Clock size={32} /> },
-  { id: 4, title: 'Payroll', desc: 'Manage salaries, taxes, and payment processing', icon: <BarChart3 size={32} /> },
-  { id: 5, title: 'Performance', desc: 'Manage KPIs and employee performance reviews', icon: <ShieldCheck size={32} /> },
-  { id: 6, title: 'Documents', desc: 'Manage secure storage and document access', icon: <FileText size={32} /> },
+      [
+  { 
+    id: 1, 
+    title: 'Employee', 
+    desc: 'Manage employee records and workforce operations ', 
+    icon: <Users size={32} /> 
+  },     // 60 → ab 65
+  { 
+    id: 2, 
+    title: 'Recruitment', 
+    desc: 'Manage hiring process and talent acquisition tasks  ', 
+    icon: <Briefcase size={32} /> 
+  },   // 65
+  { 
+    id: 3, 
+    title: 'Attendance', 
+    desc: 'Manage employee time tracking and attendance records ', 
+    icon: <Clock size={32} /> 
+  },    // 64 → ab 65
+  { 
+    id: 4, 
+    title: 'Payroll', 
+    desc: 'Manage salaries, taxes, deductions and payment processing ', 
+    icon: <BarChart3 size={32} /> 
+  },  // 65
+  { 
+    id: 5, 
+    title: 'Performance', 
+    desc: 'Manage employee KPIs and performance review processes ', 
+    icon: <ShieldCheck size={32} /> 
+  },   // 65
+  { 
+    id: 6, 
+    title: 'Documents', 
+    desc: 'Manage document storage with secure access and control ', 
+    icon: <FileText size={32} /> 
+  }     // 65
 ];
 
     return (
@@ -66,7 +96,7 @@ const TopModules = () => {
                         <SwiperSlide key={module.id} className="py-4">
                             <motion.div
                                 whileHover={{ y: -10 }}
-                                className="bg-white border border-gray-300 p-8 rounded-2xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] flex flex-col items-start gap-4 transition-all hover:shadow-2xl hover:border-primary-red/20 h-full"
+                                className="bg-white border border-gray-300 p-6 rounded-2xl min-h-30 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] flex flex-col items-start gap-4 transition-all hover:shadow-2xl hover:border-primary-red/20"
                             >
                                 <div className="p-4 bg-primary-gray text-white rounded-full transition-colors duration-300 hover:bg-primary-red">
                                     {module.icon}

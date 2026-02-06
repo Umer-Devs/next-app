@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import { About, Blog, Contact, Home, Services } from '../Pages';
+import { About, Blog, Contact, Crm, Home, Services } from '../Pages';
 import Lenis from 'lenis';
 
 const ScrollToTop = () => {
@@ -17,7 +17,7 @@ const Router = () => {
   useEffect(() => {
     // Initialize Lenis
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.7,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       smoothTouch: false,
@@ -45,6 +45,7 @@ const Router = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/crm" element={<Crm />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

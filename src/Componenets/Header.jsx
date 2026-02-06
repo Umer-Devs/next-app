@@ -12,6 +12,7 @@ const Header = () => {
         { name: 'home', path: '/' },
         { name: 'about us', path: '/about' },
         { name: 'services', path: '/services' },
+        { name: 'crm', path: '/crm' },
         { name: 'blog', path: '/blog' },
     ];
     const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);

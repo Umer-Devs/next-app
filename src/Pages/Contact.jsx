@@ -5,7 +5,9 @@ import { ContactBg } from '../assets'
 const Contact = () => {
     return (
         <>
+        {/* contact header  */}
             <Header />
+            {/* contact hero  */}
             <main className='custom-padding w-full flex flex-col justify-center items-center bg-no-repeat bg-center bg-cover min-h-[60vh] relative' style={{ backgroundImage: `url(${ContactBg})` }}>
                 <div className='flex flex-col justify-center items-center w-full space-y-8 z-10'>
                     <h2 className=' text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-center capitalize'>Contact Us</h2>
@@ -19,7 +21,9 @@ const Contact = () => {
                     </div>
                 </div>
             </main>
+            {/* form componenet  */}
             <Forms/>
+            {/* footer component  */}
             <Footer />
         </>
     )

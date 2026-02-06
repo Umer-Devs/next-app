@@ -14,6 +14,7 @@ const Accounts = () => {
     ];
 
     return (
+        <>
         <section className="custom-padding py-20 bg-white relative overflow-hidden">
             <img src={Line1} alt="" className='absolute top-8 left-0   ' />
             {/* Sketchy background decor (approximated) */}
@@ -79,6 +80,7 @@ const Accounts = () => {
                 ))}
             </div>
         </section>
+        </>
     );
 };
 

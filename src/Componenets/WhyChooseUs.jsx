@@ -16,6 +16,7 @@ const WhyChooseUs = () => {
         "Analytical & Dynamic HR Dashboards",
         "AI Based Voice Drive HCMS/HRMS",
         "Geo Fencing Capabilities"
+        
     ];
 
     return (
@@ -32,6 +33,8 @@ const WhyChooseUs = () => {
                     <h2 className='text-4xl md:text-5xl font-bold text-primary-black tracking-tight'>
                         Why Choose Us
                     </h2>
+
+                     
 
                     <p className='text-primary-black font-medium   lg:min-w-2xl custom-size-two:min-w-4xl text-evenly  '>
                         FlowHCM Stands Out Due To Its Comprehensive HRMS Features Designed To Streamline Human Resource Management. It Offers Robust Functionalities For Managing Employee Data, Payroll Processing,  Evaluations All Within A User-Friendly Interface. With Its Emphasis On Scalability And Efficiency, FlowHCM Empowers Organizations To Optimize Their HR Processes And Enhance Overall Productivity Seamlessly.
