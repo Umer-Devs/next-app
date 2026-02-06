@@ -10,7 +10,7 @@ const CrmOne = () => {
     ]
 
     return (
-        <section className='bg-[#E5E5E5] custom-padding py-16 overflow-hidden'>
+        <section className='bg-[#E5E5E5]/50   custom-padding py-16 overflow-hidden'>
             <div className='grid lg:grid-cols-2 gap-10 lg:gap-16 items-center'>
 
                 {/* Image Section */}
@@ -21,7 +21,7 @@ const CrmOne = () => {
                     viewport={{ once: true }}
                     className='w-full'
                 >
-                    <img className='w-full h-auto object-cover rounded-2xl ' src={Crm1} alt="CRM Journey" />
+                    <img className='w-full h-auto object-cover rounded-2xl  ' src={Crm1} alt="CRM Journey" />
                 </motion.div>
 
                 {/* Content Section */}
@@ -56,7 +56,7 @@ const CrmOne = () => {
                                 whileHover={{ scale: 1.02, backgroundColor: "#fff" }}
                                 className='bg-white/80 backdrop-blur-sm rounded-xl border border-transparent hover:border-primary-red transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-4 sm:gap-6 px-4 sm:px-6 py-3 sm:py-4 max-w-md cursor-default'
                             >
-                                <div className='w-8 h-8 sm:w-10 sm:h-10 bg-primary-black rounded-full text-white flex items-center justify-center text-sm sm:text-base font-bold shrink-0'>
+                                <div className='rounded-l-full px-6 bg-primary-black rounded-r-full   text-white flex items-center justify-center text-sm sm:text-base font-bold shrink-0'>
                                     {index + 1}
                                 </div>
                                 <p className='font-semibold text-primary-black text-sm sm:text-lg lg:text-xl'>

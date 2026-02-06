@@ -6,7 +6,7 @@ const OurApproach = () => {
     const badgeText = "WE ARE # IT SERVICES # PROVIDED # ";
 
     return (
-        <section className='  custom-padding md:px-10 overflow-hidden relative py-12 md:py-20'>
+        <section className='custom-padding md:px-10 overflow-hidden relative py-12 md:py-20'>
             <img src={Line1} className='absolute top-0 left-0 hidden md:block' alt="" />
             <img src={Line2} className='absolute -bottom-40 -right-10 hidden md:block' alt="" />
 

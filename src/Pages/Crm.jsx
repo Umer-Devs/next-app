@@ -5,7 +5,7 @@ import { CrmMain, Line1, Line2 } from '../assets'
 
 const Crm = () => {
    
-    // Animation variants for container to stagger children
+   
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -17,7 +17,6 @@ const Crm = () => {
         }
     };
 
-    // Animation for individual items (text, buttons)
     const itemVariants = {
         hidden: { y: 30, opacity: 0 },
         visible: {
@@ -31,7 +30,6 @@ const Crm = () => {
         <div className='overflow-x-hidden'>
             {/* header  */}
             <Header />
-
             {/* main content  */}
             <main className='custom-padding py-20 relative min-h-[80vh] flex flex-col justify-center overflow-hidden'>
                 {/* Decorative Elements - Animated Entrance */}
@@ -113,7 +111,7 @@ const Crm = () => {
             {/* crm tools  */}
             <CrmTools/>
             {/* crm blogs  */}
-            <CrmBlogs/>
+            {/* <CrmBlogs/> */}
             {/* video icon  */}
            
             {/* footer  */}
