@@ -2,7 +2,13 @@ import React from 'react'
 import { Header, Hero, SliderOne, TopModules, WhyChooseUs, Accounts, OprationOne, FAQS, CtaOne, Footer } from '../Componenets'
 
 const Home = () => {
+    const data = [
+        {
+        
+        }
+    ]
     return (
+        
         <>
             {/* header */}
             <Header />

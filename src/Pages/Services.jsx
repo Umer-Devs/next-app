@@ -5,11 +5,17 @@ const Services = () => {
   return (
     <>
       <Header />
+      {/* header end */}
       <HeroServices />
+      {/* HeroServices end */}
       <SliderOne />
+      {/* SliderOne end */}
       <ServicesGrid />
+      {/* ServicesGrid end */}
       <CtaTwo />
+      {/* CtaTwo end */}
       <Footer />
+      {/* Footer end */}
     </>
   )
 }

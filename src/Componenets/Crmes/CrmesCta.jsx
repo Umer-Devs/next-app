@@ -66,6 +66,7 @@ const TenantsSummaryCard = () => {
 };
 
 const CrmesCta = () => {
+    
     const features = [
         {
             icon: Users,
@@ -85,7 +86,7 @@ const CrmesCta = () => {
     ];
 
     return (
-        <section className='bg-red pt-16  pr-4 md:pr-9 lg:pr-16 xl:pr-20 2xl:pr-30 overflow-hidden'>
+        <section className='bg-red pt-16  pr-4 md:pr-9 lg:pr-16 xl:pr-20 2xl:pr-30 overflow-hidden rounded-t-2xl'>
             <div className='grid lg:grid-cols-2 gap-12 lg:gap-8'>
 
                 {/* Left Column: Image & Overlay */}

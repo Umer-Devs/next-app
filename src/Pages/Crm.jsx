@@ -84,7 +84,7 @@ const Crm = () => {
                             whileTap={{ scale: 0.95 }}
                             className='bg-primary-black text-white px-8 py-3 rounded-full capitalize text-lg font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto'
                         >
-                            request a demo
+                            Getting Started
                         </motion.button>
                     </motion.div>
                 </motion.div>

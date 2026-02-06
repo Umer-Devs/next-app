@@ -50,6 +50,7 @@ const CrmBlogs = () => {
     ]
 
     return (
+      <>
         <section className='custom-padding py-20 bg-white'>
             <div className='flex flex-col   justify-center items-center mb-10'>
                 <h2 className='text-3xl md:text-4xl text-center font-semibold text-gray-900 mb-4'>Our latest news blogs</h2>
@@ -104,6 +105,8 @@ const CrmBlogs = () => {
                 ))}
             </div>
         </section>
+      
+      </>
     )
 }
 
