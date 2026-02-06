@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Download } from 'lucide-react'
 import { HeroImg, HeroMini } from '../../assets'
+import VideoIcon from '../VideoIcon'
 
 const Hero = () => {
   const containerVariants = {
@@ -46,7 +47,7 @@ const Hero = () => {
             variants={itemVariants}
             className=' font-medium leading-relaxed font-medium text-primary-black text-justify'
           >
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vitae quidem pariatur ipsa necessitatibus reiciendis, vero rerum laborum quo, dolorum sunt. Provident facilis id impedit rerum commodi maxime ipsam ducimus libero aperiam nulla. Minima!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vitae quidem pariatur ipsa necessitatibus reiciendis, vero rerum laborum quo, dolorum sunt. Provident facilis id impedit rerum commodi maxime ipsam ducimus libero aperiam nulla. Minima!
           </motion.p>
 
           <motion.div
@@ -81,7 +82,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Image & Animated Boxes */}
-        <div className='relative flex justify-end custom-size:justify-end items-center mt-24 custom-size:mt-0'>
+        <div className='relative flex justify-end custom-size:justify-end items-center mt-24 custom-size:mt-0 '>
           {/* Main Hero Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -89,6 +90,9 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="relative"
           >
+            <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30'>
+              <VideoIcon />
+            </div>
             <img
               className=' lg:max-h-[75vh] w-full lg:w-auto lg:object-contain drop-shadow-2xl'
               src={HeroImg}
@@ -110,7 +114,7 @@ const Hero = () => {
               }}
               className="absolute -top-10 -left-4 md:-left-60  bg-white p-4 md:p-6 rounded-2xl shadow-2xl border border-gray-100 min-w-[200px] md:min-w-[280px] z-20"
             >
-              
+
               <span className=" text-primary-black text-sm md:text-base font-semibold mb-1">
                 You Signed In Today at 09:25:50 AM
               </span>
@@ -130,11 +134,11 @@ const Hero = () => {
                 opacity: 1,
                 y: [0, 10, 0]
               }}
-              
-              className="absolute bottom-4 -left-4 md:-left-40 bg-white p-4 md:p-6 rounded-2xl shadow-2xl border border-gray-100 min-w-[200px] md:min-w-[280px] z-20"
+
+              className="absolute bottom-4 left-4 md:-left-40 bg-white p-4 md:p-6 rounded-2xl shadow-2xl border border-gray-100 min-w-[200px] md:min-w-[280px] z-20 hover:scale-105 transition-all duration-300 "
             >
               <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-                
+
                 <h4 className="text-primary-black text-sm md:text-lg text-center font-bold leading-tight">
                   Here is your last month <br /> payslip
                 </h4>
@@ -143,10 +147,10 @@ const Hero = () => {
                 Download Payslip! <Download size={16} />
               </button>
               <div className=" absolute -top-1 -left-8 p-2 bg-primary-red/10 rounded-full border border-primary-red/20 shadow-sm">
-                  <div className="w-6 h-6 md:w-8 md:h-8 bg-primary-red rounded-full flex items-center justify-center text-white font-bold text-[10px] md:text-xs">
-                    RX
-                  </div>
+                <div className="w-6 h-6 md:w-8 md:h-8 bg-primary-red rounded-full flex items-center justify-center text-white font-bold text-[10px] md:text-xs">
+                  RX
                 </div>
+              </div>
             </motion.div>
 
             {/* Decorative Background Blur */}

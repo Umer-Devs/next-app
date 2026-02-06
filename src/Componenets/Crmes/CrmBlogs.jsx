@@ -50,9 +50,9 @@ const CrmBlogs = () => {
     ]
 
     return (
-        <section className='custom-padding pb-20 bg-white'>
+        <section className='custom-padding py-20 bg-white'>
             <div className='flex flex-col   justify-center items-center mb-10'>
-                <h2 className='text-3xl md:text-4xl text-center font-medium text-gray-900 mb-4'>Our latest news blogs</h2>
+                <h2 className='text-3xl md:text-4xl text-center font-semibold text-gray-900 mb-4'>Our latest news blogs</h2>
                 <p className='text-priamry-black text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                
             </div>

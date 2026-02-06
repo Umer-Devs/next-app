@@ -32,7 +32,7 @@ const Header = () => {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="hidden custom-size:flex items-center bg-primary-black rounded-lg p-2 px-12 custom-size-two:px-30 space-x-16">
+                <div className="hidden custom-size:flex items-center bg-primary-black rounded-lg p-2 px-8 custom-size-two:px-26 space-x-16">
                     <ul className="flex items-center space-x-10 capitalize text-white">
                         {navLinks.map((link) => (
                             <li key={link.name} className="relative group">

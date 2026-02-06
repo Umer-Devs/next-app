@@ -27,16 +27,16 @@ const CrmTools = () => {
                             <div className='relative z-10 p-3 bg-white rounded-xl shadow-sm border border-gray-100'><img src={item3} alt="Tool" className='w-12 h-12 object-contain' /></div>
 
                             {/* Connecting Lines SVG */}
-                            <svg className='absolute top-0 right-[-180px] h-full w-[350px] -z-0 pointer-events-none' preserveAspectRatio="none">
+                            <svg className='absolute top-0 right-[-280px] h-full w-[450px] -z-0 pointer-events-none' preserveAspectRatio="none">
                                 {/* Top Path */}
-                                <path d="M 160 25 H 200 Q 230 25 230 55 V 135 H 350" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
-                                <circle cx="350" cy="135" r="4" fill="#D1D5DB" />
+                                <path d="M 160 25 H 200 Q 230 25 230 55 V 135 H 450" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
+                                <circle cx="450" cy="135" r="4" fill="#D1D5DB" />
                                 {/* Middle Path */}
-                                <path d="M 160 145 H 350" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
-                                <circle cx="350" cy="145" r="4" fill="#D1D5DB" />
+                                <path d="M 160 145 H 450" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
+                                <circle cx="450" cy="145" r="4" fill="#D1D5DB" />
                                 {/* Bottom Path */}
-                                <path d="M 160 265 H 200 Q 230 265 230 235 V 155 H 350" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
-                                <circle cx="350" cy="155" r="4" fill="#D1D5DB" />
+                                <path d="M 160 265 H 200 Q 230 265 230 235 V 155 H 450" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
+                                <circle cx="450" cy="155" r="4" fill="#D1D5DB" />
                             </svg>
                         </div>
 
@@ -54,14 +54,14 @@ const CrmTools = () => {
                             <div className='relative z-10 p-3 bg-white rounded-xl shadow-sm border border-gray-100'><img src={item6} alt="Tool" className='w-12 h-12 object-contain' /></div>
 
                             {/* Connecting Lines SVG */}
-                            <svg className='absolute top-0 left-[-180px] h-full w-[350px] -z-0 pointer-events-none' style={{ transform: 'scaleX(-1)' }}>
+                            <svg className='absolute top-0 left-[-280px] h-full w-[450px] -z-0 pointer-events-none' style={{ transform: 'scaleX(-1)' }}>
                                 {/* Mirrored paths from left side */}
-                                <path d="M 160 25 H 200 Q 230 25 230 55 V 135 H 350" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
-                                <circle cx="350" cy="135" r="4" fill="#D1D5DB" />
-                                <path d="M 160 145 H 350" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
-                                <circle cx="350" cy="145" r="4" fill="#D1D5DB" />
-                                <path d="M 160 265 H 200 Q 230 265 230 235 V 155 H 350" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
-                                <circle cx="350" cy="155" r="4" fill="#D1D5DB" />
+                                <path d="M 160 25 H 200 Q 230 25 230 55 V 135 H 450" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
+                                <circle cx="450" cy="135" r="4" fill="#D1D5DB" />
+                                <path d="M 160 145 H 450" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
+                                <circle cx="450" cy="145" r="4" fill="#D1D5DB" />
+                                <path d="M 160 265 H 200 Q 230 265 230 235 V 155 H 450" fill="none" stroke="#D1D5DB" strokeWidth="2" strokeDasharray="4 4" />
+                                <circle cx="450" cy="155" r="4" fill="#D1D5DB" />
                             </svg>
                         </div>
                     </div>

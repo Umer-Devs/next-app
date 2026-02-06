@@ -93,7 +93,7 @@ const CrmService = () => {
                                 whileHover={{ y: -10 }}
                                 className="bg-white hover:border p-6 rounded-2xl min-h-30  flex flex-col items-start gap-4 transition-all hover:shadow-2xl hover:border-primary-red hover:border-4 "
                             >
-                               <div className='flex items-center gap-6'>
+                               <div className='flex items-center gap-3'>
  <div className="p-4 bg-primary-gray text-white rounded-full transition-colors duration-300 hover:bg-primary-red">
                                     {module.icon}
                                 </div>

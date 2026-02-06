@@ -112,7 +112,7 @@ const CrmesCta = () => {
                             transition={{ duration: 0.8 }}
                             src={Crm2}
                             alt="CRM Dashboard Preview"
-                    className='relative -left-16 sm:left-0 '
+                    className='relative -left-16 sm:-left-20 w-[100%]  '
                         />
 
                         {/* Floater Card - Tenants Summary */}
@@ -121,7 +121,7 @@ const CrmesCta = () => {
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.3, type: "spring", bounce: 0.4 }}
-                            className='absolute bottom-6 right-4 md:-right-8 lg:right-0 xl:right-10 z-10 hidden sm:block'
+                            className='absolute -bottom-6 custom-size:-bottom-6 custom-size-two:bottom-12  xl:-bottom-8 right-4 md:-right-8 lg:right-0 xl:right-10 z-10 hidden sm:block'
                         >
                             <TenantsSummaryCard />
                         </motion.div>
@@ -140,7 +140,7 @@ const CrmesCta = () => {
                         Our CRM empowers teams to build stronger customer relationships, streamline workflows, boost productivity, and unlock real growth through intelligent automation and data-driven insights.
                     </motion.p>
 
-                    <div className='space-y-6 '>
+                    <div className='space-y-6 py-4 '>
                         {features.map((feature, index) => (
                             <motion.div
                                 key={index}

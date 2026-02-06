@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { CrmBlogs, CrmOne, CrmService, CrmTools, CrmesCta, Footer, Header, SliderOne } from '../Componenets'
+import { CrmBlogs, CrmOne, CrmService, CrmTools, CrmesCta, Footer, Header, SliderOne, VideoIcon } from '../Componenets'
 import { CrmMain, Line1, Line2 } from '../assets'
 
 const Crm = () => {
@@ -114,6 +114,8 @@ const Crm = () => {
             <CrmTools/>
             {/* crm blogs  */}
             <CrmBlogs/>
+            {/* video icon  */}
+           
             {/* footer  */}
             <Footer />
         </div>
