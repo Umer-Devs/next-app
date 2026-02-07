@@ -4,23 +4,22 @@ import { WhyChoose1 } from '../assets'
 
 const WhyChooseUs = () => {
     const features = [
-        "Fastest Growing HR Software",
-        "Single Click Payroll",
-        "Customized User Role",
-        "Automated Alerts & Notifications",
-        "On-Cloud & On-Premises",
-        "Mobile Application",
-        "Dynamic Workflow & Approvals",
-        "Employee Self Service",
-        "Dynamic & Customizable Reports",
-        "Analytical & Dynamic HR Dashboards",
-        "AI Based Voice Drive HCMS/HRMS",
-        "Geo Fencing Capabilities"
-        
+        "Advanced AI Analytics",
+        "Strategic BPO Excellence",
+        "Scalable IT Infrastructure",
+        "Automated HR Management",
+        "24/7 Global Support",
+        "Cloud-Native Architecture",
+        "Dynamic Workflow Automation",
+        "Robust Data Security",
+        "Customizable Service Level",
+        "Real-time Performance Metrics",
+        "Seamless API Integrations",
+        "Enterprise-Grade Compliance"
     ];
 
     return (
-        <section className='custom-padding py-20 bg-white overflow-hidden'>
+        <section className='custom-padding py-20 bg-white overflow-hidden font-outfit'>
             <div className='grid custom-size:grid-cols-2 gap-10 items-center'>
                 {/* Left Content */}
                 <motion.div
@@ -30,18 +29,20 @@ const WhyChooseUs = () => {
                     viewport={{ once: true }}
                     className='flex flex-col space-y-6'
                 >
-                    <h2 className='text-4xl md:text-5xl font-bold text-primary-black tracking-tight'>
-                        Why Choose Us
+                    <div className='flex items-center gap-2 text-primary-red font-bold tracking-widest text-sm uppercase'>
+                        <span className='w-10 h-[2px] bg-primary-red'></span>
+                        Core Advantages
+                    </div>
+                    <h2 className='text-4xl md:text-5xl font-bold text-primary-black tracking-tight leading-tight'>
+                        Why Organizations Trust <br className='hidden custom-size-two:block' /> <span className='text-primary-red'>ProcessIQ Tech</span>
                     </h2>
 
-                     
-
-                    <p className='text-primary-black font-medium   lg:min-w-2xl custom-size-two:min-w-4xl text-evenly  '>
-                        FlowHCM Stands Out Due To Its Comprehensive HRMS Features Designed To Streamline Human Resource Management. It Offers Robust Functionalities For Managing Employee Data, Payroll Processing,  Evaluations All Within A User-Friendly Interface. With Its Emphasis On Scalability And Efficiency, FlowHCM Empowers Organizations To Optimize Their HR Processes And Enhance Overall Productivity Seamlessly.
+                    <p className='text-slate-600 font-medium text-lg leading-relaxed text-justify'>
+                        ProcessIQ Tech stands out as a global leader in business transformation. We don't just provide software; we deliver strategic ecosystems that integrate IT, BPO, and HR operations into one seamless engine. Our emphasis on AI-driven efficiency and scalable architecture empowers your organization to thrive in a digital-first economy.
                     </p>
 
-                    <div className='w-full max-w-md h-[2px] bg-primary-red relative my-4'>
-                        <div className='absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-primary-red rotate-45' />
+                    <div className='w-full max-w-md h-[1px] bg-gray-100 relative my-4'>
+                        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-16 h-[2px] bg-primary-red' />
                     </div>
 
                     <div className='grid md:grid-cols-2 gap-x-8 gap-y-4 pt-4'>
@@ -54,8 +55,10 @@ const WhyChooseUs = () => {
                                 viewport={{ once: true }}
                                 className='flex items-center gap-3 group'
                             >
-                                <div className='w-2 h-2 rounded-full bg-primary-red flex-shrink-0 group-hover:scale-150 transition-transform' />
-                                <span className='text-primary-black font-bold text-[15px] leading-tight'>
+                                <div className='w-5 h-5 rounded-lg bg-red-50 flex items-center justify-center group-hover:bg-primary-red transition-all duration-300'>
+                                    <div className='w-1.5 h-1.5 rounded-full bg-primary-red group-hover:bg-white' />
+                                </div>
+                                <span className='text-slate-800 font-bold text-[15px] leading-tight'>
                                     {feature}
                                 </span>
                             </motion.div>
@@ -71,17 +74,18 @@ const WhyChooseUs = () => {
                     viewport={{ once: true }}
                     className='relative flex justify-center custom-size:justify-end items-center'
                 >
-                    {/* Red decorative shape in background */}
-                  
-
                     <motion.div
-                        animate={{ y: [0, -15, 0] }}
-                        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                        animate={{ y: [0, -20, 0] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                        className='relative'
                     >
+                        {/* Decorative background circle */}
+                        <div className='absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-primary-red/5 rounded-full blur-3xl' />
+
                         <img
                             src={WhyChoose1}
-                            alt="HR Software Interface on Laptop"
-                            className='w-full max-w-[600px] object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]'
+                            alt="ProcessIQ Technology Solutions"
+                            className='w-full max-w-[600px] object-contain drop-shadow-[0_45px_45px_rgba(0,0,0,0.15)] relative z-10'
                         />
                     </motion.div>
                 </motion.div>

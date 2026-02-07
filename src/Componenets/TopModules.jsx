@@ -9,45 +9,45 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const TopModules = () => {
-    const modules = 
-      [
-  { 
-    id: 1, 
-    title: 'Employee', 
-    desc: 'Manage employee records and workforce operations ', 
-    icon: <Users size={32} /> 
-  },     // 60 → ab 65
-  { 
-    id: 2, 
-    title: 'Recruitment', 
-    desc: 'Manage hiring process and talent acquisition tasks  ', 
-    icon: <Briefcase size={32} /> 
-  },   // 65
-  { 
-    id: 3, 
-    title: 'Attendance', 
-    desc: 'Manage employee time tracking and attendance records ', 
-    icon: <Clock size={32} /> 
-  },    // 64 → ab 65
-  { 
-    id: 4, 
-    title: 'Payroll', 
-    desc: 'Manage salaries, taxes, deductions and payment processing ', 
-    icon: <BarChart3 size={32} /> 
-  },  // 65
-  { 
-    id: 5, 
-    title: 'Performance', 
-    desc: 'Manage employee KPIs and performance review processes ', 
-    icon: <ShieldCheck size={32} /> 
-  },   // 65
-  { 
-    id: 6, 
-    title: 'Documents', 
-    desc: 'Manage document storage with secure access and control ', 
-    icon: <FileText size={32} /> 
-  }     // 65
-];
+    const modules =
+        [
+            {
+                id: 1,
+                title: 'Employee',
+                desc: 'Manage employee records and workforce operations ',
+                icon: <Users size={32} />
+            },     // 60 → ab 65
+            {
+                id: 2,
+                title: 'Recruitment',
+                desc: 'Manage hiring process and talent acquisition tasks  ',
+                icon: <Briefcase size={32} />
+            },   // 65
+            {
+                id: 3,
+                title: 'Attendance',
+                desc: 'Manage employee time tracking and attendance records ',
+                icon: <Clock size={32} />
+            },    // 64 → ab 65
+            {
+                id: 4,
+                title: 'Payroll',
+                desc: 'Manage salaries, taxes, deductions and payment processing ',
+                icon: <BarChart3 size={32} />
+            },  // 65
+            {
+                id: 5,
+                title: 'Performance',
+                desc: 'Manage employee KPIs and performance review processes ',
+                icon: <ShieldCheck size={32} />
+            },   // 65
+            {
+                id: 6,
+                title: 'Documents',
+                desc: 'Manage document storage with secure access and control ',
+                icon: <FileText size={32} />
+            }     // 65
+        ];
 
     return (
         <section className="py-20 bg-white custom-padding mt-18 overflow-hidden">
@@ -58,7 +58,7 @@ const TopModules = () => {
                     transition={{ duration: 0.6 }}
                     className="text-4xl font-semibold text-primary-black uppercase tracking-tight"
                 >
-                    Renexus TOP MODULES
+                    ProcessIQ Tech Core Ecosystem
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, x: -30 }}
@@ -66,7 +66,7 @@ const TopModules = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-primary-gray font-medium mt-2 max-w-2xl"
                 >
-                    Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
+                    A unified suite of intelligent modules designed to optimize your internal operations and accelerate your business growth.
                 </motion.p>
             </div>
             <div className="relative">

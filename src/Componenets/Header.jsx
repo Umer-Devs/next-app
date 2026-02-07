@@ -1,20 +1,33 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import Modal from './Modal';
+import { Logo } from '../assets';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState(null);
+    const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 
     const navLinks = [
-        { name: 'home', path: '/' },
-        { name: 'about us', path: '/about' },
-        { name: 'services', path: '/services' },
-        { name: 'crm', path: '/crm' },
-        { name: 'blog', path: '/blog' },
+        { name: 'HOME', path: '/' },
+        { name: 'ABOUT', path: '/about' },
+        { name: 'HRMS', path: '/hrms' },
+        {
+            name: 'SERVICES',
+            path: '/service',
+            dropdown: [
+                { name: 'Managed IT Services', path: '/service/managed-it' },
+                { name: 'Call Center Services', path: '/service/call-center' },
+                { name: 'BPO', path: '/service/bpo' },
+            ]
+        },
+        { name: 'CRM', path: '/crm' },
+        // { name: 'BLOG', path: '/blog' },
     ];
+
     const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
     return (
@@ -22,31 +35,39 @@ const Header = () => {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="custom-padding py-6  top-0 bg-white z-50  "
+            className="custom-padding py-6 top-0 bg-white z-50"
         >
             <div className="flex items-center justify-between ">
 
                 {/* Logo */}
                 <Link to="/">
-                    <h2 className="text-4xl font-bold text-primary-black">LOGO</h2>
+                   <img className=' w-55   custom-size-two:w-65' src={Logo} alt="" />
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="hidden custom-size:flex items-center bg-primary-black rounded-lg p-2 px-8 custom-size-two:px-26 space-x-16">
-                    <ul className="flex items-center space-x-10 capitalize text-white">
-                        {navLinks.map((link) => (
-                            <li key={link.name} className="relative group">
+                <div className="hidden custom-size:flex items-center bg-primary-black rounded-lg p-2 px-4 custom-size-two:px-18  space-x-4  custom-size-two:space-x-8">
+                    <ul className="flex items-center space-x-8 capitalize text-white h-12">
+                        {navLinks.map((link, index) => (
+                            <li
+                                key={link.name}
+                                className="relative h-full flex items-center group cursor-pointer"
+                                onMouseEnter={() => link.dropdown && setActiveDropdown(index)}
+                                onMouseLeave={() => setActiveDropdown(null)}
+                            >
                                 <NavLink
                                     to={link.path}
                                     className={({ isActive }) =>
-                                        `text-lg font-medium transition-colors duration-300 ${isActive ? 'text-primary-red' : 'text-white hover:text-primary-red'
+                                        `text-lg font-medium transition-colors duration-300 flex items-center gap-1 ${isActive ? 'text-primary-red' : 'text-white hover:text-primary-red'
                                         }`
                                     }
                                 >
                                     {({ isActive }) => (
                                         <>
                                             {link.name}
-                                            {/* Active/Hover Line Animation */}
+                                            {link.dropdown && (
+                                                <ChevronDown size={16} className={`transition-transform duration-300 ${activeDropdown === index ? 'rotate-180' : ''}`} />
+                                            )}
+                                            {/* Active Line Animation */}
                                             {isActive && (
                                                 <motion.div
                                                     layoutId="activeUnderline"
@@ -59,6 +80,31 @@ const Header = () => {
                                         </>
                                     )}
                                 </NavLink>
+
+                                {/* Desktop Dropdown */}
+                                <AnimatePresence>
+                                    {link.dropdown && activeDropdown === index && (
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 15 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: 15 }}
+                                            transition={{ duration: 0.2 }}
+                                            className="absolute top-[100%] left-0 pt-4 z-50"
+                                        >
+                                            <div className="bg-primary-black border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-4 w-72 flex flex-col space-y-1">
+                                                {link.dropdown.map((item) => (
+                                                    <Link
+                                                        key={item.name}
+                                                        to={item.path}
+                                                        className="text-white hover:text-primary-red text-sm font-bold p-3 rounded-xl hover:bg-primary-red/10 transition-all duration-300"
+                                                    >
+                                                        {item.name}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                             </li>
                         ))}
                     </ul>
@@ -66,9 +112,9 @@ const Header = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-primary-red text-white px-8 py-2 rounded-full capitalize text-lg font-medium"
+                            className="bg-primary-red text-white custom-size:px-6 xl:px-8 py-2 rounded-full capitalize text-lg font-medium"
                         >
-                            contact us
+                            CONTACT
                         </motion.button>
                     </Link>
                 </div>
@@ -81,7 +127,7 @@ const Header = () => {
                         onClick={() => setIsModalOpen(true)}
                         className="bg-primary-red px-6 py-2 rounded-full text-white capitalize text-lg font-medium"
                     >
-                        request a demo
+                        request  demo
                     </motion.button>
                 </div>
 
@@ -95,11 +141,10 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Mobile Navigation Mesh/Overlay */}
+            {/* Mobile Navigation */}
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <>
-                        {/* Overlay Backdrop */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -108,13 +153,12 @@ const Header = () => {
                             className="fixed inset-0 bg-black/60 z-40 custom-size:hidden"
                         />
 
-                        {/* Sidebar Content */}
                         <motion.div
                             initial={{ x: '100%' }}
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
                             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                            className="fixed top-0 right-0 h-full w-[80%] bg-primary-black z-50 custom-size:hidden flex flex-col p-8 pt-24"
+                            className="fixed top-0 right-0 h-full w-[85%] sm:w-[50%] bg-primary-black z-50 custom-size:hidden flex flex-col p-8 pt-24 overflow-y-auto"
                         >
                             <button
                                 onClick={toggleMobileMenu}
@@ -123,19 +167,52 @@ const Header = () => {
                                 <X size={32} />
                             </button>
 
-                            <ul className="flex flex-col space-y-8 capitalize text-2xl font-semibold">
+                            <ul className="flex flex-col space-y-4 capitalize text-2xl font-semibold">
                                 {navLinks.map((link) => (
                                     <li key={link.name}>
-                                        <NavLink
-                                            to={link.path}
-                                            onClick={() => setIsMobileMenuOpen(false)}
-                                            className={({ isActive }) =>
-                                                `transition-colors duration-300 ${isActive ? 'text-primary-red' : 'text-white hover:text-primary-red'
-                                                }`
-                                            }
-                                        >
-                                            {link.name}
-                                        </NavLink>
+                                        {link.dropdown ? (
+                                            <div className="flex flex-col">
+                                                <button
+                                                    onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                                                    className="flex items-center justify-between w-full py-2 text-white hover:text-primary-red transition-colors"
+                                                >
+                                                    {link.name}
+                                                    <ChevronDown className={`transition-transform duration-300 ${mobileDropdownOpen ? 'rotate-180' : ''}`} />
+                                                </button>
+                                                <AnimatePresence>
+                                                    {mobileDropdownOpen && (
+                                                        <motion.div
+                                                            initial={{ height: 0, opacity: 0 }}
+                                                            animate={{ height: 'auto', opacity: 1 }}
+                                                            exit={{ height: 0, opacity: 0 }}
+                                                            className="overflow-hidden flex flex-col pl-4 space-y-2"
+                                                        >
+                                                            {link.dropdown.map(item => (
+                                                                <NavLink
+                                                                    key={item.name}
+                                                                    to={item.path}
+                                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                                    className="text-lg py-2 text-gray-400 hover:text-primary-red transition-colors"
+                                                                >
+                                                                    {item.name}
+                                                                </NavLink>
+                                                            ))}
+                                                        </motion.div>
+                                                    )}
+                                                </AnimatePresence>
+                                            </div>
+                                        ) : (
+                                            <NavLink
+                                                to={link.path}
+                                                onClick={() => setIsMobileMenuOpen(false)}
+                                                className={({ isActive }) =>
+                                                    `block py-2 transition-colors duration-300 ${isActive ? 'text-primary-red' : 'text-white hover:text-primary-red'
+                                                    }`
+                                                }
+                                            >
+                                                {link.name}
+                                            </NavLink>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
@@ -168,3 +245,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

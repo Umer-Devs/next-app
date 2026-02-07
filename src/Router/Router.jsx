@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import { About, Blog, Contact, Crm, Home, Services } from '../Pages';
+import { About, Blog, Contact, Crm, CrmOnePage, Home, Services, ManageiT, Bpo, CallCenter } from '../Pages';
 import Lenis from 'lenis';
+
+
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -39,14 +42,19 @@ const Router = () => {
 
   return (
     <BrowserRouter>
+     
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/hrms" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/crm" element={<Crm />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/service" element={<CrmOnePage />} />
+        <Route path="service/managed-it" element={<ManageiT />} />
+        <Route path="service/bpo" element={<Bpo />} />
+        <Route path="service/call-center" element={<CallCenter />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { WhyChoose1, Line2 } from '../../assets';
 
@@ -45,13 +46,15 @@ const CtaTwo = () => {
                     </div>
 
                     <div className="flex flex-wrap items-center gap-8 pt-4">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-10 py-4 border-2 border-primary-red text-primary-black font-bold rounded-full hover:bg-primary-red hover:text-white transition-all duration-300"
-                        >
-                            Get Started Free
-                        </motion.button>
+                        <Link to="/contact">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="px-10 py-4 border-2 border-primary-red text-primary-black font-bold rounded-full hover:bg-primary-red hover:text-white transition-all duration-300"
+                            >
+                                Get Started Free
+                            </motion.button>
+                        </Link>
 
                         <div className="flex items-center gap-4">
                             <div className="flex -space-x-4">

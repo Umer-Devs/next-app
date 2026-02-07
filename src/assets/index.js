@@ -20,7 +20,7 @@ export {default as Account3} from './Home/Account3.png'
 export {default as Account4} from './Home/Account4.png'
 export {default as Account5} from './Home/Account5.png'
 export {default as Account6} from './Home/Account6.png'
-export {default as CrmMain} from './Home/CrmMain.png'
+export {default as CrmMainOne} from './Home/CrmMainOne.png'
 export {default as Crm1} from './Home/Crm1.png'
 export {default as Crm2} from './Home/Crm2.png'
 export {default as CrmToolsBg} from './Home/CrmToolsBg.png'
@@ -53,5 +53,11 @@ export {default as item4} from './Tools/item4.png'
 export {default as item5} from './Tools/item5.png'
 export {default as item6} from './Tools/item6.png'
 
+// crm one page 
+export {default as heroMainCrmOne} from './CrmOne/heroMainCrmOne.png'
+export {default as MainCrmOne1} from './CrmOne/MainCrmOne1.png'
 
 
+
+// logo 
+export {default as Logo} from './logo.png'

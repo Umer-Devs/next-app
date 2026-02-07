@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Crm1, HeroMini } from '../../assets'
 
@@ -67,13 +68,15 @@ const CrmOne = () => {
                     </div>
 
                     <div className='flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10 pt-4'>
-                        <motion.button
-                            // whileHover={{ scale: 1.05, backgroundColor: "#ED1C24", borderColor: "#ED1C24" }}
-                            whileTap={{ scale: 0.95 }}
-                            className='bg-primary-black border border-primary-red text-white px-8 py-2 rounded-full border-2 border-primary-black shadow-lg  transition-all duration-300 text-lg font-medium'
-                        >
-                            Get Started
-                        </motion.button>
+                        <Link to="/contact">
+                            <motion.button
+                                // whileHover={{ scale: 1.05, backgroundColor: "#ED1C24", borderColor: "#ED1C24" }}
+                                whileTap={{ scale: 0.95 }}
+                                className='bg-primary-black border border-primary-red text-white px-8 py-2 rounded-full border-2 border-primary-black shadow-lg  transition-all duration-300 text-lg font-medium'
+                            >
+                                Get Started
+                            </motion.button>
+                        </Link>
 
                         <div className='flex items-center gap-4'>
                             <img className='h-12   ' src={HeroMini} alt="User avatars" />

@@ -5,9 +5,9 @@ import { Opration1 } from '../assets';
 
 const OprationOne = () => {
     const listItems = [
-        "Is Simply Dummy Text",
-        "Is Simply Dummy Text",
-        "Is Simply Dummy Text"
+        "ISO Certified Standards",
+        "AI-Powered Automation",
+        "Real-time Monitoring"
     ];
 
     return (
@@ -24,10 +24,10 @@ const OprationOne = () => {
                 >
                     <div className="space-y-4">
                         <h2 className="text-4xl md:text-5xl font-bold text-center text-primary-black tracking-tight custom-size:text-left">
-                            Operations / Work
+                            Operations & Workflow
                         </h2>
                         <p className="text-primary-black font-medium leading-relaxed max-w-xl  mx-auto custom-size:mx-0">
-                            Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,
+                            ProcessIQ Tech integrates advanced project management frameworks with real-time operational tracking to ensure every task is optimized for speed and accuracy.
                         </p>
                     </div>
 
@@ -60,9 +60,9 @@ const OprationOne = () => {
                             <div className="p-3 bg-white/20 rounded-full">
                                 <ShieldCheck size={40} />
                             </div>
-                            <h3 className="text-2xl font-bold uppercase tracking-wider">Warranty</h3>
+                            <h3 className="text-2xl font-bold uppercase tracking-wider">Guarantee</h3>
                             <p className=" leading-tight opacity-90 font-medium">
-                                Lorem ipsum dolor sit amet consectetur adipisicing 
+                                We provide 99.9% operational uptime and enterprise-grade security.
                             </p>
                         </motion.div>
                     </div>

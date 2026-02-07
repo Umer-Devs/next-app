@@ -1,11 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { CrmBlogs, CrmOne, CrmService, CrmTools, CrmesCta, Footer, Header, SliderOne, VideoIcon } from '../Componenets'
-import { CrmMain, Line1, Line2 } from '../assets'
+import { AutoMakeTask, CrmBlogs, CrmModule, CrmOne, CrmService, CrmTools, CrmesCta, Footer, Header, SliderOne, VideoIcon } from '../Componenets'
+import { CrmMainOne, Line1, Line2 } from '../assets'
+import { Link } from 'react-router-dom'
 
 const Crm = () => {
-   
-   
+
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -68,10 +69,11 @@ const Crm = () => {
                     </motion.h2>
 
                     <motion.p variants={itemVariants} className='text-center mx-auto max-w-3xl text-gray-700 text-base md:text-lg leading-relaxed px-4'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sunt deleniti est quo, quisquam harum similique esse quia aperiam distinctio!
+                        ProcessIQ Tech CRM enables mid-to-large scale enterprises to consolidate customer touchpoints into a single, intelligent database. Experience seamless integration, real-time analytics, and automated lead nurturing designed specifically for modern sales teams.
                     </motion.p>
 
                     <motion.div variants={itemVariants} className='flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 w-full sm:w-auto mt-2'>
+                       <Link to={'/contact'}>
                         <motion.button
                             whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(237, 28, 36, 0.3)" }}
                             whileTap={{ scale: 0.95 }}
@@ -79,13 +81,15 @@ const Crm = () => {
                         >
                             request a demo
                         </motion.button>
+                       </Link>
+                        <Link to={'/contact'}>
                         <motion.button
                             whileHover={{ scale: 1.05, backgroundColor: "#ED1C24", boxShadow: "0px 10px 20px rgba(12, 12, 12, 0.3)" }}
                             whileTap={{ scale: 0.95 }}
                             className='bg-primary-black text-white px-8 py-3 rounded-full capitalize text-lg font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto'
                         >
                             Getting Started
-                        </motion.button>
+                        </motion.button></Link>
                     </motion.div>
                 </motion.div>
 
@@ -96,24 +100,31 @@ const Crm = () => {
                     viewport={{ once: true }}
                     className='flex justify-center items-center mt-12 md:mt-20 w-full'
                 >
-                    <img className='w-full max-w-6xl object-contain drop-shadow-xl hover:drop-shadow-2xl transition-all duration-500' src={CrmMain} alt="CRM Interface" />
+                    <CrmModule />
                 </motion.div>
 
             </main>
             {/* slider  */}
-            <SliderOne/>
+            <SliderOne />
             {/* crm one  */}
-            <CrmOne/>
+            <CrmOne />
             {/* crm service  */}
-            <CrmService/>
+            <CrmService />
             {/* crm cta  */}
-            <CrmesCta/>
+            <CrmesCta />
             {/* crm tools  */}
-            <CrmTools/>
-            {/* crm blogs  */}
-            {/* <CrmBlogs/> */}
-            {/* video icon  */}
-           
+            <CrmTools />
+            {/* auto make task  */}
+            <AutoMakeTask
+                title="Automate Tasks To Increase Efficiency And Reduce Manual Effort"
+                description="Gain Precise Insights For Your Business With Our Advanced Analytics Tools. Make Informed Decisions Based On Accurate, Real-Time Data"
+                points={[
+                    "Actionable Insights",
+                    "Enhanced Decision-Making",
+                    "Improved Efficiency"
+                ]}
+                btnText="Learn More"
+            />
             {/* footer  */}
             <Footer />
         </div>

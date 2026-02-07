@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Download } from 'lucide-react'
 import { HeroImg, HeroMini } from '../../assets'
@@ -26,7 +27,7 @@ const Hero = () => {
   }
 
   return (
-    <section className='overflow-hidden bg-white '>
+    <section className='overflow-hidden bg-white xl:mt-20 custom-size-two:mt-0'>
       <main className='grid custom-size:grid-cols-2 custom-padding min-h-screen items-center py-10 custom-size:py-0'>
         {/* Left Content */}
         <motion.div
@@ -47,7 +48,7 @@ const Hero = () => {
             variants={itemVariants}
             className=' font-medium leading-relaxed font-medium text-primary-black text-justify'
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vitae quidem pariatur ipsa necessitatibus reiciendis, vero rerum laborum quo, dolorum sunt. Provident facilis id impedit rerum commodi maxime ipsam ducimus libero aperiam nulla. Minima!
+            Streamline your HR operations with a powerful and easy-to-use solution designed to simplify employee management, improve productivity, and enhance workplace efficiency. Our HR software helps you manage employee records, attendance, performance, and payroll seamlessly all from one centralized platform.
           </motion.p>
 
           <motion.div
@@ -64,20 +65,24 @@ const Hero = () => {
             variants={itemVariants}
             className='flex flex-wrap items-center gap-4 lg:gap-8'
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className='border-2 border-primary-red text-primary-black px-10 py-3 rounded-full font-bold transition-all hover:bg-primary-red hover:text-white'
-            >
-              Learn More
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className='bg-primary-black text-primary-red px-8 py-3 rounded-full font-bold flex items-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black'
-            >
-              Request a Demo
-            </motion.button>
+            <Link to="/hrms">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className='border-2 border-primary-red text-primary-black px-10 py-3 rounded-full font-bold transition-all hover:bg-primary-red hover:text-white'
+              >
+                Learn More
+              </motion.button>
+            </Link>
+            <Link to="/contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className='bg-primary-black text-primary-red px-8 py-3 rounded-full font-bold flex items-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black'
+              >
+                Request a Demo
+              </motion.button>
+            </Link>
           </motion.div>
         </motion.div>
 

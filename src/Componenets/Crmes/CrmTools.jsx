@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { CrmToolsBg, item1, item2, item3, item4, item5, item6 } from '../../assets'
 
 
@@ -42,9 +43,11 @@ const CrmTools = () => {
 
                         {/* Center Button */}
                         <div className='relative z-20 shrink-0'>
-                            <button className='bg-black text-white px-8 py-4 border border-primary-red border-2 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 '>
-                                See All Integrations
-                            </button>
+                            <Link to="/crm">
+                                <button className='bg-black text-white px-8 py-4 border border-primary-red border-2 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 '>
+                                    See All Integrations
+                                </button>
+                            </Link>
                         </div>
 
                         {/* Right Tree */}
