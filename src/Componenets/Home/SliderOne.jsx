@@ -1,14 +1,14 @@
 import React from 'react';
-import { Logo1, Logo2, Logo3, Logo4, Logo5 } from '../../assets';
+import { Logo1, Logo2, Logo3, Logo4, Logo5, Logo6 } from '../../assets';
 
 const SliderOne = () => {
-    const logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
+    const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
     // Duplicate the array multiple times to ensure it covers screen width and loops seamlessly
     const infiniteLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
 
     return (
-        <section className="py-16 bg-white overflow-hidden border-y border-primary-black relative ">
+        <section className="pb-10 bg-white overflow-hidden relative ">
             {/* Gradient Overlays for smooth entry/exit look */}
             {/* <div className="absolute inset-y-0 left-0 w-20 md:w-60 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
             <div className="absolute inset-y-0 right-0 w-20 md:w-60 bg-gradient-to-l from-white via-white/80 to-transparent z-10" /> */}

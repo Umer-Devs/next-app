@@ -5,57 +5,58 @@ import { ArrowRight, Users, Wallet, ClipboardList, CalendarCheck, Layout, Bankno
 import { Line1 } from '../../assets';
 
 const ServicesOne = () => {
-    const servicesData = [
-        {
-            id: 1,
-            title: 'EMPLOYEE CRM',
-            description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,",
-            icon: <Users size={32} />,
-            path: '/crm'
-        },
-        {
-            id: 2,
-            title: 'ACCOUNTS',
-            description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,",
-            icon: <Wallet size={32} />,
-            path: '/service'
-        },
-        {
-            id: 3,
-            title: 'TASK MANAGEMENT',
-            description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,",
-            icon: <ClipboardList size={32} />,
-            path: '/service'
-        },
-        {
-            id: 4,
-            title: 'ATTENDANCE',
-            description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,",
-            icon: <CalendarCheck size={32} />,
-            path: '/service'
-        },
-        {
-            id: 5,
-            title: 'COMPLETE HRM',
-            description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,",
-            icon: <Layout size={32} />,
-            path: '/hrms'
-        },
-        {
-            id: 6,
-            title: 'PAYROLL',
-            description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,",
-            icon: <Banknote size={32} />,
-            path: '/service'
-        },
-        {
-            id: 7,
-            title: 'CALLCENTER SOLUTIONS',
-            description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,",
-            icon: <Headset size={32} />,
-            path: '/service/call-center'
-        }
-    ];
+   const servicesData = [
+    {
+        id: 1,
+        title: 'EMPLOYEE CRM',
+        description: "Employee CRM helps manage employee records, communication, performance tracking, and internal collaboration in one centralized system to improve productivity and transparency.",
+        icon: <Users size={32} />,
+        path: '/crm'
+    },
+    {
+        id: 2,
+        title: 'ACCOUNTS',
+        description: "Manage company finances efficiently with accounting tools including expense tracking, invoicing, financial reports, and transaction management for better financial control.",
+        icon: <Wallet size={32} />,
+        path: '/service'
+    },
+    {
+        id: 3,
+        title: 'TASK MANAGEMENT',
+        description: "Organize and monitor daily tasks, assign responsibilities, track progress, and ensure timely completion of projects with an easy-to-use task management system.",
+        icon: <ClipboardList size={32} />,
+        path: '/service'
+    },
+    {
+        id: 4,
+        title: 'ATTENDANCE',
+        description: "Track employee attendance, working hours, leaves, and late arrivals with automated attendance management and real-time reporting features.",
+        icon: <CalendarCheck size={32} />,
+        path: '/service'
+    },
+    {
+        id: 5,
+        title: 'COMPLETE HRM',
+        description: "A complete Human Resource Management solution covering recruitment, employee management, performance evaluation, attendance, payroll, and HR reporting.",
+        icon: <Layout size={32} />,
+        path: '/hrms'
+    },
+    {
+        id: 6,
+        title: 'PAYROLL',
+        description: "Automate salary calculations, tax deductions, bonuses, and payslip generation while ensuring accurate and timely payroll processing.",
+        icon: <Banknote size={32} />,
+        path: '/service'
+    },
+    {
+        id: 7,
+        title: 'CALLCENTER SOLUTIONS',
+        description: "Advanced call center solutions for managing inbound and outbound calls, agent performance monitoring, call tracking, and customer interaction management.",
+        icon: <Headset size={32} />,
+        path: '/service/call-center'
+    }
+];
+
 
     return (
         <section className="custom-padding py-24 bg-white relative overflow-hidden">

@@ -11,6 +11,7 @@ export {default as Logo2} from './logo/Logo2.png'
 export {default as Logo3} from './logo/Logo3.png'
 export {default as Logo4} from './logo/Logo4.png'
 export {default as Logo5} from './logo/Logo5.png'
+export {default as Logo6} from './logo/Logo6.png'
 
 // Acount
 

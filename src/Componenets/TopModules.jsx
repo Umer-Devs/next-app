@@ -14,13 +14,13 @@ const TopModules = () => {
             {
                 id: 1,
                 title: 'Employee',
-                desc: 'Manage employee records and workforce operations ',
+                desc: 'Manage employee records and workforce operations seamlessly ',
                 icon: <Users size={32} />
             },     // 60 → ab 65
             {
                 id: 2,
                 title: 'Recruitment',
-                desc: 'Manage hiring process and talent acquisition tasks  ',
+                desc: 'Manage hiring process and talent acquisition tasks efficiently  ',
                 icon: <Briefcase size={32} />
             },   // 65
             {

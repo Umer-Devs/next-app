@@ -40,8 +40,8 @@ const Hero = () => {
             variants={itemVariants}
             className='font-semibold text-primary-black leading-[1.2]'
           >
-            Best HR Software <br />
-            <span className="">To Manage Your Employe</span>
+            Best HRMS solution  <br />
+            <span className="">to manage your Organisation</span>
           </motion.h1>
 
           <motion.p

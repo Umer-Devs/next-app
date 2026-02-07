@@ -142,14 +142,25 @@ const CrmModule = () => {
             ]
         },
         {
-            id: 10,
-            name: 'DESIGN CRM',
-            users: 8,
-            status: 'Idle',
+            id: 11,
+            name: 'Design Sales CRM',
+            users: 15,
+            status: 'Active',
             sections: [
                 {
-                    heading: "Resource Provider Networking",
-                    content: "Manage your network of external contractors and service providers. This portal handles onboarding, secure document sharing, and automated invoicing, making it easy to scale your workforce up or down based on project demands."
+                    heading: "Centralized Design & eCommerce Client Management",
+                    content: "Manage all your design clients, Shopify store owners, and project workflows from one powerful platform. Design Sales CRM helps creative agencies and freelance design teams track leads, manage orders, monitor project progress, automate invoicing, and maintain seamless communication with clients — all in one place. From logo design and branding projects to full Shopify store development, this CRM ensures every inquiry, revision, and delivery is organized, allowing your team to close deals faster and scale design operations efficiently."
+                },
+                {
+                    heading: "Key Benefits",
+                    content: [
+                        "Lead-to-project conversion tracking",
+                        "Shopify store client management",
+                        "Design order workflow & revision tracking",
+                        "Automated invoicing and payment monitoring",
+                        "Team task assignment and performance tracking",
+                        "Centralized client communication history"
+                    ]
                 }
             ]
         },
@@ -331,9 +342,26 @@ const CrmModule = () => {
                                                 <span className="w-8 h-[2px] bg-primary-red rounded-full"></span>
                                                 {section.heading}
                                             </h3>
-                                            <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed text-justify">
-                                                {section.content}
-                                            </p>
+                                            {Array.isArray(section.content) ? (
+                                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
+                                                    {section.content.map((point, pIdx) => (
+                                                        <motion.li
+                                                            key={pIdx}
+                                                            initial={{ opacity: 0, x: -10 }}
+                                                            animate={{ opacity: 1, x: 0 }}
+                                                            transition={{ delay: (idx * 0.1) + (pIdx * 0.05) }}
+                                                            className="flex items-start gap-4 text-slate-600 text-lg font-semibold"
+                                                        >
+                                                            <div className="mt-2 w-2.5 h-2.5 rounded-full bg-primary-red flex-shrink-0 shadow-sm shadow-primary-red/30" />
+                                                            {point}
+                                                        </motion.li>
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed text-justify">
+                                                    {section.content}
+                                                </p>
+                                            )}
                                         </motion.div>
                                     ))}
                                 </div>
