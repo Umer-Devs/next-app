@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Send } from 'lucide-react';
+import { Phone, Mail, Send, MapPinHouse } from 'lucide-react';
 import { Logo } from '../assets';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
@@ -105,13 +105,17 @@ const Footer = () => {
 
                         {/* Contact Info */}
                         <div className="space-y-4 pt-2">
-                            <div className="flex items-center gap-4 group">
+                            {/* <div className="flex items-center gap-4 group">
                                 <Phone size={20} className="group-hover:text-primary-red transition-colors text-primary-red" />
                                 <span className="font-bold">+1 281-874-8480</span>
-                            </div>
+                            </div> */}
                             <div className="flex items-center gap-4 group">
                                 <Mail size={20} className="group-hover:text-primary-red transition-colors text-primary-red" />
                                 <span className="font-bold">Info@processiqtech.com</span>
+                            </div>
+                            <div className="flex items-center gap-4 group">
+                               <MapPinHouse  size={20} className="group-hover:text-primary-red transition-colors text-primary-red" />
+                                <span className="font-semibold">150 NW 72ND AVE TOWER 1 STE 455 #18787, MIAMI, FL 33126</span>
                             </div>
                         </div>
                     </div>
