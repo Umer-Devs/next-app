@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import { About5 } from '../../assets'
+import { About5, Logo21 } from '../../assets'
 
 const StatCircle = ({ percentage, label, description }) => {
     return (
@@ -108,17 +108,10 @@ const WhyChooseUsOne = () => {
                     >
                         {/* Decorative Elements */}
                         {/* <div className="absolute -top-3 -right-3 w-32 h-32 border-t-8 border-r-8 border-primary-red -z-10"></div> */}
-                        <div className="absolute -bottom-0 -left-0 w-24 h-16 bg-primary-red/40 -z-10 group-hover:scale-110 transition-transform -z-9 "></div>
+                        <div className="absolute -bottom-0 -left-0 w-24 h-16 bg-primary-red/40 -z-10 group-hover:scale-110 transition-transform -z-9 hidden md:block "></div>
 
                         <div className="space-y-8">
-                            <motion.h3
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ delay: 0.4 }}
-                                className="text-3xl  font-semibold tracking-tighter text-white"
-                            >
-                                LOGO
-                            </motion.h3>
+                            <img src={Logo21} className=' h-30'  alt="" />
 
                             <div className="space-y-6">
                                 <h4 className="text-3xl md:text-4xl  font-bold text-white leading-tight">
@@ -134,7 +127,7 @@ const WhyChooseUsOne = () => {
                                     <span className="text-6xl  font-semibold text-white"># 1</span>
                                 </div>
 
-                                <Link to="/about">
+                                <Link to="/contact">
                                     <motion.button
                                         whileHover={{ scale: 1.05, backgroundColor: "#ED1C24" }}
                                         whileTap={{ scale: 0.95 }}

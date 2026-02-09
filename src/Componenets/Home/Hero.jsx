@@ -40,13 +40,13 @@ const Hero = () => {
             variants={itemVariants}
             className='font-semibold text-primary-black leading-[1.2]'
           >
-            Best HRMS solution  <br />
-            <span className="">to manage your Organisation</span>
+            Best HRMS solution 
+           to <br /> manage your Organisation
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
-            className=' font-medium leading-relaxed font-medium text-primary-black text-justify'
+            className=' font-medium leading-relaxed font-medium  text-justify'
           >
             Streamline your HR operations with a powerful and easy-to-use solution designed to simplify employee management, improve productivity, and enhance workplace efficiency. Our HR software helps you manage employee records, attendance, performance, and payroll seamlessly all from one centralized platform.
           </motion.p>
@@ -55,7 +55,7 @@ const Hero = () => {
             variants={itemVariants}
             className='flex items-center gap-4 bg-gray-50 p-3 rounded-2xl w-fit'
           >
-            <img className='h-16' src={HeroMini} alt="Trusted Companies" />
+            <img className='h-18' src={HeroMini} alt="Trusted Companies" />
             <p className='text-primary-red  md:text-lg font-bold'>
               Trusted by 1000+ companies
             </p>
@@ -69,7 +69,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className='border-2 border-primary-red text-primary-black px-10 py-3 rounded-full font-bold transition-all hover:bg-primary-red hover:text-white'
+                className=' bg-primary-red text-white  px-10 py-3 rounded-full font-bold transition-all hover:bg-primary-red hover:text-white'
               >
                 Learn More
               </motion.button>
@@ -78,7 +78,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className='bg-primary-black text-primary-red px-8 py-3 rounded-full font-bold flex items-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black'
+                className='bg-primary-black text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black'
               >
                 Request a Demo
               </motion.button>

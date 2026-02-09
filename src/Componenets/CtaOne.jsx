@@ -22,7 +22,7 @@ const CtaOne = () => {
         const loadingToast = toast.loading('Sending your request...');
 
         try {
-            const response = await axios.post('http://localhost/project/RenexusMarkitingWebsite/php/send_email_dynamic.php', formData);
+            const response = await axios.post('https://processiqtech.com/php/send_email_dynamic.php', formData);
 
             if (response.data.status === 'success' || response.status === 200) {
                 toast.success('Request sent successfully!', { id: loadingToast });

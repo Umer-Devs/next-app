@@ -31,7 +31,7 @@ const OprationOne = () => {
                         </p>
                     </div>
 
-                    <div className="    flex flex-col md:flex-row gap-8 items-start">
+                    <div className="    flex flex-col md:flex-row gap-12 items-start">
                         {/* Features List */}
                         <div className="flex flex-col gap-4 w-full md:w-auto">
                             {listItems.map((item, index) => (
@@ -55,14 +55,14 @@ const OprationOne = () => {
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.4 }}
-                            className="bg-primary-red  rounded-xl p-4 text-white flex flex-col items-center text-center space-y-2 shadow-2xl shadow-primary-red/20 w-full md:w-[240px]"
+                            className="bg-primary-red  rounded-xl p-4  lg:h-60 text-white flex flex-col items-center text-center space-y-2 shadow-2xl shadow-primary-red/20 w-full md:w-[230px]"
                         >
                             <div className="p-3 bg-white/20 rounded-full">
                                 <ShieldCheck size={40} />
                             </div>
                             <h3 className="text-2xl font-bold uppercase tracking-wider">Guarantee</h3>
                             <p className=" leading-tight opacity-90 font-medium">
-                                We provide 99.9% operational uptime and enterprise-grade security.
+                                We provide 99.9% operational and enterprise-grade security.
                             </p>
                         </motion.div>
                     </div>

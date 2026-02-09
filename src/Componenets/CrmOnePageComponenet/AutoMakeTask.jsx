@@ -49,7 +49,7 @@ const AutoMakeTask = ({
                         ))}
                     </ul>
 
-                    <Link to="/service">
+                    <Link to="/contact">
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -60,7 +60,7 @@ const AutoMakeTask = ({
                     </Link>
                 </motion.div>
 
-                {/* Right Image Container - Layered Visuals */}
+                
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}

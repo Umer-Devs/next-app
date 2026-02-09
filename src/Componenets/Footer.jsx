@@ -1,9 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Send } from 'lucide-react';
 import { Logo } from '../assets';
+import axios from 'axios';
+import { toast } from 'react-hot-toast';
 
 const Footer = () => {
+    const [email, setEmail] = useState('');
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!email) {
+            toast.error('Please enter an email address');
+            return;
+        }
+
+        setLoading(true);
+        const loadingToast = toast.loading('Subscribing...');
+
+        try {
+            const response = await axios.post('https://processiqtech.com/php/send_email_dynamic.php', email);
+
+            if (response.data.status === 'success' || response.status === 200) {
+                toast.success('Successfully subscribed to newsletter!', { id: loadingToast });
+                setEmail('');
+            } else {
+                toast.error(response.data.message || 'Something went wrong. Please try again.', { id: loadingToast });
+            }
+        } catch (error) {
+            toast.error('Failed to subscribe. Please try again.', { id: loadingToast });
+            console.error('Subscription error:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <footer className="bg-[#E5E5E5] text-primary-black font-outfit">
             {/* Main Footer Content */}
@@ -53,16 +85,23 @@ const Footer = () => {
                         </div>
 
                         {/* Subscription Form */}
-                        <div className="relative flex items-center max-w-sm">
+                        <form onSubmit={handleSubmit} className="relative flex items-center max-w-sm">
                             <input
                                 type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Your E-Mail Address"
+                                required
                                 className="w-full bg-white px-6 py-4 rounded-xl border border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-red/20 placeholder:text-gray-400"
                             />
-                            <button className="absolute right-2 bg-primary-red text-white p-2 rounded-lg hover:bg-primary-black transition-all duration-300">
+                            <button
+                                type="submit"
+                                disabled={loading}
+                                className="absolute right-2 bg-primary-red text-white p-2 rounded-lg hover:bg-primary-black transition-all duration-300 disabled:opacity-50"
+                            >
                                 <Send size={20} />
                             </button>
-                        </div>
+                        </form>
 
                         {/* Contact Info */}
                         <div className="space-y-4 pt-2">

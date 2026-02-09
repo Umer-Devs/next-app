@@ -18,29 +18,29 @@ const CtaTwo = () => {
                     className="flex flex-col space-y-8"
                 >
                     <div className="space-y-4">
-                        <h4 className="text-primary-black font-bold text-lg">Appreciation Feature</h4>
+                        <h4 className="text-primary-black font-bold text-lg">Workforce Excellence</h4>
                         <h2 className="text-4xl md:text-5xl font-bold text-primary-black tracking-tight leading-tight">
-                            Our Priority CRM Options For The Future
+                            Modern HRMS Solutions For Your Workforce
                         </h2>
                         <p className="text-primary-gray font-medium leading-relaxed">
-                            CRM Management Is Comprehensive Contact Management, Allowing Businesses To Centralize And Organize Customer Information For Easy Access.
+                            Our HRMS streamlines human resources processes, from recruitment and payroll to performance management, centralized in one powerful platform.
                         </p>
                     </div>
 
                     <div className="space-y-8">
                         {/* Feature 1 */}
                         <div className="space-y-2">
-                            <h3 className="text-2xl font-bold text-primary-black">Sales Force Automation</h3>
+                            <h3 className="text-2xl font-bold text-primary-black">Automated Payroll Management</h3>
                             <p className="text-primary-gray font-medium leading-relaxed">
-                                CRM Management Is Comprehensive Contact Management, Allowing Businesses To Centralize And Organize Customer Information For Allowing Businesses To Centralize And Organize Easy Access.
+                                Simplify complex payroll calculations, tax compliance, and benefit administration with our integrated automated payroll system for error-free processing.
                             </p>
                         </div>
 
                         {/* Feature 2 */}
                         <div className="space-y-2">
-                            <h3 className="text-2xl font-bold text-primary-black">Lead Management</h3>
+                            <h3 className="text-2xl font-bold text-primary-black">Employee Performance Tracking</h3>
                             <p className="text-primary-gray font-medium leading-relaxed">
-                                CRM Management Is Comprehensive Contact Management, Allowing Businesses To Centralize And Organize Customer Information For Allowing Businesses To Centralize And Organize Easy Access.
+                                Monitor employee progress and facilitate growth with comprehensive performance reviews and real-time attendance tracking tools.
                             </p>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ const CtaTwo = () => {
                             </div>
                             <div>
                                 <h4 className="font-bold text-primary-black text-lg">2.5k +</h4>
-                                <p className="text-primary-gray text-sm font-medium">Active Customer</p>
+                                <p className="text-primary-gray text-sm font-medium">Active HR Users</p>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ const CtaTwo = () => {
                     >
                         <img
                             src={WhyChoose1}
-                            alt="CRM Dashboard Laptop"
+                            alt="HRMS Dashboard Laptop"
                             className="w-full max-w-[600px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.2)]"
                         />
                     </motion.div>

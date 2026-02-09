@@ -86,14 +86,15 @@ const ServicesOne = () => {
                     viewport={{ once: true }}
                     className="text-primary-gray font-medium max-w-3xl mx-auto leading-relaxed"
                 >
-                    Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s,
+                    “Efficiently manage employee lifecycle, attendance, payroll, and performance all in one platform.
                 </motion.p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 custom-size:grid-cols-3 gap-10">
                 {servicesData.map((service, index) => (
-                    <Link to={service.path} key={service.id}>
+                  
                         <motion.div
+                        key={service.id}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
@@ -116,16 +117,10 @@ const ServicesOne = () => {
                                     {service.description}
                                 </p>
 
-                                {/* Read More */}
-                                <div className="flex items-center gap-2 group/btn">
-                                    <span className="text-primary-black font-bold group-hover:text-white transition-colors duration-500">
-                                        Read More
-                                    </span>
-                                    <ArrowRight size={18} className="text-primary-black group-hover:text-white transform group-hover/btn:translate-x-1 transition-all duration-500" />
-                                </div>
+                               
                             </div>
                         </motion.div>
-                    </Link>
+                    
                 ))}
             </div>
         </section>

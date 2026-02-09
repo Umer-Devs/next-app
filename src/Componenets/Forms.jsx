@@ -27,7 +27,7 @@ const Forms = () => {
         const loadingToast = toast.loading('Sending your message...')
 
         try {
-            const response = await axios.post('http://localhost/project/RenexusMarkitingWebsite/php/send_email_dynamic.php', formData)
+            const response = await axios.post('https://processiqtech.com/php/send_email_dynamic.php', formData)
 
             if (response.data.status === 'success' || response.status === 200) {
                 toast.success('Message sent successfully!', { id: loadingToast })
