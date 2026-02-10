@@ -140,7 +140,7 @@ const CrmModule = () => {
                     content: "Manage your network of external contractors and service providers. This portal handles onboarding, secure document sharing, and automated invoicing, making it easy to scale your workforce up or down based on project demands."
                 }
             ]
-        },-
+        },
         {
             id: 11,
             name: 'Design Sales CRM',

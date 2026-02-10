@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Send, MapPinHouse } from 'lucide-react';
+import { Phone, Mail, Send, MapPinHouse, Facebook, Instagram } from 'lucide-react';
 import { Logo } from '../assets';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
@@ -15,7 +15,6 @@ const Footer = () => {
             toast.error('Please enter an email address');
             return;
         }
-
         setLoading(true);
         const loadingToast = toast.loading('Subscribing...');
 
@@ -37,6 +36,7 @@ const Footer = () => {
     };
 
     return (
+        <>
         <footer className="bg-[#E5E5E5] text-primary-black font-outfit">
             {/* Main Footer Content */}
             <div className="custom-padding py-20">
@@ -50,11 +50,15 @@ const Footer = () => {
                         <p className="text-primary-gray font-medium leading-relaxed max-w-sm">
                             Empowering global enterprises with intelligent IT solutions, strategic BPO, and next-gen customer engagement platforms. We streamline complexity to drive sustainable business growth.
                         </p>
+                        <div className='flex items-center gap-4  '> <a href='https://www.facebook.com/processiqtech/' target="_blank" > <Facebook  size={30} /></a> <a href='https://www.instagram.com/processiqtech/' target="_blank"><Instagram  size={30} /></a> <a  href="https://www.trustpilot.com/review/processiqtech.com"><svg xmlns="http://www.w3.org/2000/svg" x="40px" y="70px" width="50" height="50" viewBox="0 0 48 48">
+<path fill="#00b67a" d="M45.023,18.995H28.991L24.039,3.737l-4.968,15.259L3.039,18.98l12.984,9.44l-4.968,15.243 l12.984-9.424l12.968,9.424L32.055,28.42L45.023,18.995z"></path><path fill="#005128" d="M33.169,31.871l-1.114-3.451l-8.016,5.819L33.169,31.871z"></path>
+</svg></a> </div>
+
                     </div>
 
                     {/* Column 2: Support Links */}
                     <div className="space-y-8">
-                        <h4 className="text-xl font-bold uppercase tracking-wider text-primary-red">Support</h4>
+                        <h4 className="text-xl font-bold uppercase tracking-wider text-primary-red">Support</h4> 
                         <ul className="space-y-4 text-primary-gray">
                             {[
                                 { name: 'HOME', path: '/' },
@@ -83,7 +87,6 @@ const Footer = () => {
                                 Subscribe to our newsletter for the latest tech insights and business optimization strategies.
                             </p>
                         </div>
-
                         {/* Subscription Form */}
                         <form onSubmit={handleSubmit} className="relative flex items-center max-w-sm">
                             <input
@@ -132,6 +135,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+        </>
     );
 };
 

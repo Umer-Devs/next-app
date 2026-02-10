@@ -8,10 +8,10 @@ import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
-import { myhrm1, myhrm2, myhrm3, myhrm4 } from '../../assets';
+import { myhrm1, myhrm2, myhrm3, myhrm4,crm2main21 } from '../../assets';
 
 const HeroServices = () => {
-  const images = [myhrm1, myhrm2, myhrm3, myhrm4];
+  const images = [myhrm1, myhrm2, myhrm3, myhrm4,crm2main21];
 
   const containerVariants = {
     hidden: { opacity: 0 },

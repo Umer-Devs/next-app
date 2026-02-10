@@ -24,6 +24,7 @@ export {default as Account6} from './Home/Account6.png'
 export {default as CrmMainOne} from './Home/CrmMainOne.png'
 export {default as Crm1} from './Home/Crm1.png'
 export {default as Crm2} from './Home/Crm2.png'
+export {default as crm2main21} from './Home/crm2main21.png'
 export {default as CrmToolsBg} from './Home/CrmToolsBg.png'
 
 // opration 
@@ -65,5 +66,5 @@ export {default as myhrm3} from './Home/myhrm3.jpg'
 export {default as myhrm4} from './Home/myhrm4.jpg'
 
 // logo 
-export {default as Logo} from './logo.png'
-export {default as Logo21} from './logo2.png'
+export {default as Logo} from './logo.png';
+export {default as Logo21} from './logo2.png';

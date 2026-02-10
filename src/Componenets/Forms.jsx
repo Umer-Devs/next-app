@@ -11,7 +11,8 @@ const Forms = () => {
         phone: '',
         email: '',
         serviceType: '',
-        message: ''
+        message: '',
+
     })
     const [loading, setLoading] = useState(false)
 
@@ -37,7 +38,8 @@ const Forms = () => {
                     phone: '',
                     email: '',
                     serviceType: '',
-                    message: ''
+                    message: '',
+
                 })
             } else {
                 toast.error(response.data.message || 'Something went wrong', { id: loadingToast })
