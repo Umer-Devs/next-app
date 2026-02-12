@@ -88,5 +88,4 @@ const OprationOne = () => {
         </section>
     );
 };
-
 export default OprationOne;

@@ -68,3 +68,4 @@ export {default as myhrm4} from './Home/myhrm4.jpg'
 // logo 
 export {default as Logo} from './logo.png';
 export {default as Logo21} from './logo2.png';
+export {default as clucth} from './clucth.png';

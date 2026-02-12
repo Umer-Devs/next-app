@@ -41,8 +41,9 @@ const WhyChooseUs = () => {
                         ProcessIQ Tech stands out as a global leader in business transformation. We don't just provide software; we deliver strategic ecosystems that integrate IT, BPO, and HR operations into one seamless engine. Our emphasis on AI-driven efficiency and scalable architecture empowers your organization to thrive in a digital-first economy.
                     </p>
 
-                    <div className='w-full max-w-md h-[1px] bg-gray-100 relative my-4'>
-                        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-16 h-[2px] bg-primary-red' />
+                    <div className='flex items-center w-full max-w-md my-6'>
+                        <div className='h-[2px] flex-1 bg-primary-red'></div>
+                        <div className='w-3 h-3 bg-primary-red rotate-45'></div>
                     </div>
 
                     <div className='grid md:grid-cols-2 gap-x-8 gap-y-4 pt-4'>

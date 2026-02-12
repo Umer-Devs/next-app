@@ -48,6 +48,7 @@ const VideoModal = ({ isOpen, onClose, videoId = "ScMzIvxBSi4" }) => {
                         </div>
                     </motion.div>
                 </div>
+                
             )}
         </AnimatePresence>,
         document.body
