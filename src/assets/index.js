@@ -60,10 +60,10 @@ export {default as heroMainCrmOne} from './CrmOne/heroMainCrmOne.png'
 export {default as MainCrmOne1} from './CrmOne/MainCrmOne1.png'
 
 //HRMS
-export {default as myhrm1} from './Home/myhrm1.jpg'
-export {default as myhrm2} from './Home/myhrm2.jpg'
-export {default as myhrm3} from './Home/myhrm3.jpg'
-export {default as myhrm4} from './Home/myhrm4.jpg'
+export {default as myhrm1} from './Home/myhrm1.png'
+export {default as myhrm2} from './Home/myhrm2.png'
+export {default as myhrm3} from './Home/myhrm3.png'
+export {default as myhrm4} from './Home/myhrm4.png'
 
 // logo 
 export {default as Logo} from './logo.png';

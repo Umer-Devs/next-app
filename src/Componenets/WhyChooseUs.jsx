@@ -17,7 +17,6 @@ const WhyChooseUs = () => {
         "Seamless API Integrations",
         "Enterprise-Grade Compliance"
     ];
-
     return (
         <section className='custom-padding py-20 bg-white overflow-hidden font-outfit'>
             <div className='grid custom-size:grid-cols-2 gap-10 items-center'>

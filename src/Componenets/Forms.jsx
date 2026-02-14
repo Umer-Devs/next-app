@@ -3,11 +3,13 @@ import { Contact1, Line1, Line2 } from '../assets'
 import { Mail, Phone, Clock } from 'lucide-react'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
+import { countries } from '../utils/countries'
 
 const Forms = () => {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
+        countryCode: '+1',
         phone: '',
         email: '',
         serviceType: '',
@@ -35,6 +37,7 @@ const Forms = () => {
                 setFormData({
                     firstName: '',
                     lastName: '',
+                    countryCode: '+92',
                     phone: '',
                     email: '',
                     serviceType: '',
@@ -135,15 +138,29 @@ const Forms = () => {
                             />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                            <input
-                                type="tel"
-                                name="phone"
-                                value={formData.phone}
-                                onChange={handleChange}
-                                placeholder="Phone Number"
-                                required
-                                className="w-full bg-white px-6 py-4 rounded-xl outline-none focus:ring-2 focus:ring-primary-red/20 transition-all placeholder:text-gray-400 text-primary-black border border-transparent focus:border-primary-red/30"
-                            />
+                            <div className="flex gap-2">
+                                <select
+                                    name="countryCode"
+                                    value={formData.countryCode}
+                                    onChange={handleChange}
+                                    className="w-[120px] bg-white px-2 py-4 rounded-xl outline-none focus:ring-2 focus:ring-primary-red/20 transition-all text-primary-black border border-transparent focus:border-primary-red/30"
+                                >
+                                    {countries.map((country) => (
+                                        <option key={`${country.code}-${country.dial_code}`} value={country.dial_code}>
+                                            {country.code} ({country.dial_code})
+                                        </option>
+                                    ))}
+                                </select>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    placeholder="Phone Number"
+                                    required
+                                    className="flex-1 bg-white px-6 py-4 rounded-xl outline-none focus:ring-2 focus:ring-primary-red/20 transition-all placeholder:text-gray-400 text-primary-black border border-transparent focus:border-primary-red/30"
+                                />
+                            </div>
                             <input
                                 type="email"
                                 name="email"
