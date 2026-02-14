@@ -164,6 +164,94 @@ const CrmModule = () => {
                 }
             ]
         },
+        {
+            id: 12,
+            name: ' SPA & Salon CRM',
+            users: 15,
+            status: 'Active',
+            sections: [
+                {
+                    heading: "Smart Appointment Scheduling for SPA & Salon",
+                    content: "We offer an advanced appointment scheduling system specially designed for SPA & Salon businesses. Easily manage bookings, reschedule appointments, avoid double bookings, and keep your daily operations smooth with our smart calendar."
+                },
+                {
+                    heading: "Online Booking Integration for SPA & Salon",
+                    content: "We provide seamless online booking integration for your SPA & Salon website and social media platforms, allowing clients to book massages, treatments, facials, hair services, and more — anytime, anywhere."
+                },
+                {
+                    heading: "Complete SPA & Salon Client Management",
+                    content: "We offer detailed client profile management for your SPA & Salon, storing customer contact details, service history, treatment preferences, allergies, notes, and purchase records to deliver personalized experiences."
+                },
+                {
+                    heading: "Automated SMS & Email Reminders for SPA & Salon",
+                    content: "We provide automated reminders to reduce no-shows in your SPA & Salon. Appointment confirmations, reminders, follow-ups, birthday wishes, and promotional messages are sent automatically."
+                }
+            ]
+        },
+        {
+            id: 13,
+            name: 'Clinics CRM',
+            users: 10,
+            status: 'Active',
+            sections: [
+                {
+                    heading: "Smart Appointment Scheduling for Clinics",
+                    content: "We offer an advanced appointment scheduling system designed specifically for clinics. Easily manage patient bookings, reschedule visits, prevent double bookings, and organize doctor availability with a smart calendar system."
+                },
+                {
+                    heading: "Online Appointment Booking for Clinics",
+                    content: "We provide seamless online booking integration for your clinic website and social media platforms, allowing patients to schedule consultations anytime, anywhere."
+                },
+                {
+                    heading: "Complete Patient Management System",
+                    content: "We offer detailed patient profile management where you can securely store patient contact information, medical history, visit records, prescriptions, test reports, and treatment notes for better care and follow-up."
+                }
+            ]
+        },
+        {
+            id: 14,
+            name: 'Real Estate CRM',
+            users: 25,
+            status: 'Active',
+            sections: [
+                {
+                    heading: "Smart Lead & Inquiry Management",
+                    content: "We offer an advanced lead management system designed for real estate businesses. Capture inquiries from websites, portals, social media, and ads — and manage them efficiently from one dashboard."
+                },
+                {
+                    heading: "Automated Lead Assignment",
+                    content: "We provide smart lead distribution that automatically assigns property inquiries to agents based on availability, location, or project type, ensuring faster response times."
+                },
+                {
+                    heading: "Property Listing Management",
+                    content: "We offer complete property management where you can upload, organize, and manage residential, commercial, rental, and off-plan properties with images, pricing, and availability details."
+                },
+                {
+                    heading: "Client & Buyer Profile Management",
+                    content: "We provide detailed client profiles where you can store buyer preferences, budget range, communication history, site visit records, and deal progress for personalized follow-ups."
+                },
+                {
+                    heading: "Automated Follow-ups & Reminders",
+                    content: "We offer automated SMS, email, and WhatsApp reminders to ensure no lead is forgotten. Schedule follow-ups, meeting reminders, and property visit confirmations easily."
+                }
+            ]
+        },
+        {
+            id: 15,
+            name: 'Pharma Companies CRM',
+            users: 18,
+            status: 'Active',
+            sections: [
+                {
+                    heading: "Smart Sales & Lead Management",
+                    content: "We offer an advanced sales and lead management system designed specifically for pharmaceutical companies. Track hospital, clinic, and distributor inquiries while managing your sales pipeline efficiently."
+                },
+                {
+                    heading: "Medical Representative (MR) Management",
+                    content: "We provide complete management for medical representatives, including daily visit tracking, doctor coverage reports, route planning, and performance monitoring."
+                }
+            ]
+        },
 
     ];
 
@@ -235,7 +323,7 @@ const CrmModule = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    className="grid grid-cols-1 xl:grid-cols-2 custom-size-two:grid-cols-3 xl:grid-cols-3 gap-10"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 custom-size-two:grid-cols-3 xl:grid-cols-3 gap-10"
                 >
                     {crmModules.map((module) => (
                         <motion.div
